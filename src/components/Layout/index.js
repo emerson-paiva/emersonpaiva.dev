@@ -1,25 +1,20 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
 import Profile from '../Profile/Profile';
-import LayoutMain from './LayoutMain';
-import LayoutWrapper from './LayoutWrapper';
+
+import * as Styled from './styled';
+import GlobalStyles from '../../styles/global';
 
 const Layout = ({ children }) => {
   return (
-    <LayoutWrapper>
+    <Styled.LayoutWrapper>
+      <GlobalStyles />
       <aside>
         <Profile />
       </aside>
-      <LayoutMain>{children}</LayoutMain>
-    </LayoutWrapper>
+      <Styled.LayoutMain>{children}</Styled.LayoutMain>
+    </Styled.LayoutWrapper>
   );
 };
 
