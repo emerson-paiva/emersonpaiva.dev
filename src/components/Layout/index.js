@@ -8,16 +8,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Profile from './Profile/Profile';
+import Profile from '../Profile/Profile';
+import LayoutMain from './LayoutMain';
+import LayoutWrapper from './LayoutWrapper';
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <LayoutWrapper>
       <aside>
         <Profile />
       </aside>
-      <main>{children}</main>
-    </>
+      <LayoutMain>{children}</LayoutMain>
+    </LayoutWrapper>
   );
 };
 
