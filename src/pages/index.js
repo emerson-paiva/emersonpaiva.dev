@@ -1,22 +1,55 @@
 import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import SEO from '../components/seo';
 import PostItem from '../components/PostItem/PostItem';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <PostItem
-      slug="/about/"
-      background="gray"
-      category="JS"
-      date="23 de junho de 2019"
-      timeToRead="9"
-      title="E acabou o melhor ano da minha vida (até agora)"
-      description="Um pouco sobre as minhas conquistas em 2018 e as metas para 2019"
-    />
-  </Layout>
-);
+const IndexPage = () => {
+  const { allMarkdownRemark } = useStaticQuery(graphql`
+    query PostList {
+      allMarkdownRemark {
+        edges {
+          node {
+            frontmatter {
+              category
+              description
+              date(locale: "pt-br", formatString: "DD [de] MMM [de] YYYY")
+              background
+              title
+            }
+            timeToRead
+          }
+        }
+      }
+    }
+  `);
+
+  const postList = allMarkdownRemark.edges;
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      {postList.map(
+        ({
+          node: {
+            frontmatter: { category, description, date, background, title },
+            timeToRead,
+          },
+        }) => (
+          <PostItem
+            slug="/"
+            background={background}
+            category={category}
+            date={date}
+            timeToRead={timeToRead}
+            title={title}
+            description={description}
+          />
+        )
+      )}
+    </Layout>
+  );
+};
 
 export default IndexPage;
