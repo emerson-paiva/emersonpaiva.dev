@@ -12,11 +12,14 @@ const IndexPage = () => {
         edges {
           node {
             frontmatter {
-              category
-              description
-              date(locale: "pt-br", formatString: "DD [de] MMM [de] YYYY")
-              background
               title
+              date
+              description
+              category
+              background
+            }
+            fields {
+              slug
             }
             timeToRead
           }
@@ -35,10 +38,11 @@ const IndexPage = () => {
           node: {
             frontmatter: { category, description, date, background, title },
             timeToRead,
+            fields: { slug },
           },
         }) => (
           <PostItem
-            slug="/"
+            slug={slug}
             background={background}
             category={category}
             date={date}
