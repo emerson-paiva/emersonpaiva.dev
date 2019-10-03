@@ -1,9 +1,7 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 
-const Post = ({ data }) => {
-  const post = data.markdownRemark;
-
+const Post = ({ data: { markdownRemark: post } }) => {
   return (
     <>
       <h1>{post.frontmatter.title}</h1>
