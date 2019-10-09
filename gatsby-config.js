@@ -11,6 +11,13 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `uploads`,
+        path: `${__dirname}/static/assets/img`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
@@ -25,7 +32,25 @@ module.exports = {
     {
       resolve: `gatsby-transformer-remark`,
       options: {
-        plugins: [],
+        plugins: [
+          {
+            resolve: 'gatsby-remark-relative-images',
+            options: {
+              name: `uploads`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 960,
+              linkImagesToOriginal: false,
+            },
+          },
+          `gatsby-remark-lazy-load`,
+        ],
       },
     },
     `gatsby-transformer-sharp`,
