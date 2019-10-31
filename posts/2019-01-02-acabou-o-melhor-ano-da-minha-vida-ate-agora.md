@@ -2,8 +2,8 @@
 date: 2019-01-02 10:30:00
 title: Acabou o melhor ano da minha vida (até agora)
 description: Um pouco sobre esse ano lindo (2018)
-category: Misc
-background: '#7AAB13'
+category: Eu
+background: '#6d01a5'
 ---
 
 Estou aqui, assim como a maioria, revendo o que aconteceu nesse ano que se encerra e traçando as metas para o novo ano. Vou contar um pouco sobre o ano que mudou minha vida!
