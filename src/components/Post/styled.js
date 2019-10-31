@@ -8,14 +8,14 @@ export const PostHeader = styled.header`
 `;
 
 export const PostTitle = styled.h1`
-  font-size: 4rem;
+  font-size: 3.7rem;
   font-weight: 700;
   padding: 0 1.4rem;
   margin: 1rem auto;
 `;
 
 export const PostDescription = styled.h2`
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 200;
   padding: 0 1.4rem;
 `;
