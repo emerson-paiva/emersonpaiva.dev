@@ -1,3 +1,7 @@
+require('dotenv').config();
+
+const queries = require('./src/utils/algolia_queries');
+
 module.exports = {
   siteMetadata: {
     title: `Emerson Paiva`,
@@ -73,6 +77,17 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-algolia-search`,
+      options: {
+        appId: process.env.ALGOLIA_APP_ID,
+        apiKey: process.env.ALGOLIA_ADMIN_KEY,
+        indexName: process.env.ALGOLIA_INDEX_NAME,
+        queries,
+        chunkSize: 10000,
+        enablePartialUpdates: true,
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
