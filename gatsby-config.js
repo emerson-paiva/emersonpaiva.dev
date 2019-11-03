@@ -8,6 +8,7 @@ module.exports = {
     position: `Desenvolvedor Front End`,
     description: `Minhas ideias pra esse blog? Ainda estou pensando nelas.`,
     author: `@emerpaiva`,
+    siteUrl: `https://emersonpaiva.dev`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,

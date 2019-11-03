@@ -4,6 +4,7 @@ title: Acabou o ano mais incrível da minha vida (até agora)
 description: Um pouco sobre esse ano lindo (2018)
 category: Eu
 background: '#6d01a5'
+image: '/assets/img/2018_NordWoodThemes_Unsplash.jpg'
 ---
 
 Estou aqui, assim como a maioria, revendo o que aconteceu nesse ano que se encerra e traçando as metas para o novo ano. Vou contar um pouco sobre o ano que mudou minha carreira!
