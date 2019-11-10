@@ -94,10 +94,10 @@ module.exports = {
         name: `Emerson Paiva`,
         short_name: `Emerson Paiva`,
         start_url: `/`,
-        background_color: `#16202c`,
-        theme_color: `#16202c`,
+        background_color: `#6d01a5`,
+        theme_color: `#6d01a5`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-sitemap`,
