@@ -23,6 +23,7 @@ const PostsList = props => {
             frontmatter: { category, description, date, background, title },
             timeToRead,
             fields: { slug },
+            id,
           },
         }) => (
           <PostItem
@@ -33,6 +34,7 @@ const PostsList = props => {
             timeToRead={timeToRead}
             title={title}
             description={description}
+            key={id}
           />
         )
       )}
@@ -65,6 +67,7 @@ export const query = graphql`
             category
             background
           }
+          id
           fields {
             slug
           }
