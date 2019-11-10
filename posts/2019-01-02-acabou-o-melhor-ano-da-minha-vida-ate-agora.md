@@ -2,7 +2,7 @@
 date: 2019-01-02 10:30:00
 title: Acabou o ano mais incrível da minha vida (até agora)
 description: Um pouco sobre esse ano lindo (2018)
-category: Eu
+tags: ['Carreira', 'Misc']
 background: '#6d01a5'
 image: '/assets/img/2018_NordWoodThemes_Unsplash.jpg'
 ---

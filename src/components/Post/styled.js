@@ -8,7 +8,7 @@ export const PostHeader = styled.header`
 `;
 
 export const PostTitle = styled.h1`
-  font-size: 3.7rem;
+  font-size: 3.2rem;
   font-weight: 700;
   padding: 0 1.4rem;
   margin: 1rem auto;
@@ -117,7 +117,7 @@ export const MainContent = styled.section`
   h3,
   h4,
   h5 {
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.069rem;
     line-height: 1.4;
   }
