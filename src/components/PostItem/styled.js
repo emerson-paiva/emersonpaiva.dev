@@ -28,12 +28,17 @@ export const PostItemWrapper = styled.section`
 export const PostItemTags = styled.div`
   text-align: start;
   padding: 0.5rem 0;
+  display: flex;
 `;
 
 export const PostItemTag = styled.span`
   color: 'var(--highlight)';
   font-size: 1rem;
   text-transform: lowercase;
+
+  &:not(:last-child) {
+    margin-right: 0.2rem;
+  }
 `;
 
 export const TagIcon = styled(Tag)`
