@@ -60,9 +60,9 @@ const MenuBar = () => {
         {/* <S.MenuBarItem title="Mudar visualização">
           <Grid />
         </S.MenuBarItem> */}
-        <S.MenuBarItem title="Ir para o topo">
+        {/* <S.MenuBarItem title="Ir para o topo">
           <Arrow />
-        </S.MenuBarItem>
+        </S.MenuBarItem> */}
       </S.MenuBarGroup>
     </S.MenuBarWrapper>
   );

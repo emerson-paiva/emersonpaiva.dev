@@ -14,4 +14,9 @@ export const LayoutMain = styled.main`
   min-height: 100vh;
   padding: 0 3.75rem 0 20rem;
   width: 100%;
+
+  ${media.lessThan('large')`
+    margin-top: 4rem;
+    padding: 0;
+  `}
 `;

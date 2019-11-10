@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 import { Tag } from 'styled-icons/boxicons-regular/Tag';
+import media from 'styled-media-query';
 
 export const PostItemLink = styled(AniLink)`
   color: var(--texts);
@@ -18,6 +19,10 @@ export const PostItemWrapper = styled.section`
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
+
+  ${media.lessThan('large')`
+    padding: 1.5rem 2rem;
+  `}
 `;
 
 export const PostItemTags = styled.div`
@@ -39,17 +44,21 @@ export const TagIcon = styled(Tag)`
 export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
-  margin-left: 1.5rem;
 `;
 
 export const PostItemDate = styled.time`
   font-size: 0.9rem;
+  margin-bottom: 0.5rem;
 `;
 
 export const PostItemTitle = styled.h1`
   font-size: 1.8rem;
   font-weight: 700;
   margin: 0.2rem 0 0.5rem;
+
+  ${media.lessThan('medium')`
+    font-size: 1.4rem;
+  `}
 `;
 
 export const PostItemDescription = styled.p`
