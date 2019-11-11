@@ -1,10 +1,19 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const PostHeader = styled.header`
   color: var(--postColor);
   margin: auto;
   max-width: 70rem;
   padding: 5rem 5rem 0;
+
+  ${media.lessThan('large')`
+    padding: 2rem 2rem 0;
+  `}
+
+  ${media.lessThan('small')`
+    padding: 1rem 1rem 0;
+  `}
 `;
 
 export const PostTitle = styled.h1`
@@ -12,12 +21,28 @@ export const PostTitle = styled.h1`
   font-weight: 700;
   padding: 0 1.4rem;
   margin: 1rem auto;
+
+  ${media.lessThan('large')`
+    font-size: 2.8rem;
+  `}
+
+  ${media.lessThan('small')`
+    font-size: 2rem;
+  `}
 `;
 
 export const PostDescription = styled.h2`
   font-size: 1.8rem;
   font-weight: 200;
   padding: 0 1.4rem;
+
+  ${media.lessThan('large')`
+    font-size: 1.6rem;
+  `}
+
+  ${media.lessThan('small')`
+    font-size: 1.2rem;
+  `}
 `;
 
 export const PostDate = styled.p`
@@ -187,4 +212,32 @@ export const MainContent = styled.section`
       opacity: 0.8;
     }
   }
+
+  ${media.lessThan('large')`
+    padding: 2rem;
+
+    h1 {
+      font-size: 2.6rem;
+    }
+
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    h4 {
+      font-size: 1.2rem;
+    }
+
+    h5 {
+      font-size: 1rem;
+    }
+  `}
+
+  ${media.lessThan('small')`
+    padding: 1rem;
+  `}
 `;
