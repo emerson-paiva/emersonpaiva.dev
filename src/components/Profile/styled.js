@@ -37,7 +37,7 @@ export const ProfilePosition = styled.small`
   display: block;
   font-size: 1.2rem;
   font-weight: 300;
-  margin: 0.2rem 0;
+  margin: 0.25rem 0;
 
   ${media.lessThan('large')`
     font-size: 0.8rem;

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { TransitionPortal } from 'gatsby-plugin-transition-link';
 
 import Sidebar from '../Sidebar/Sidebar';
+import SocialLinks from '../SocialLinks';
 import MenuBar from '../MenuBar';
 
 import * as S from './styled';
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
     <S.LayoutWrapper>
       <GlobalStyles />
       <TransitionPortal level="top">
+        <SocialLinks />
         <Sidebar />
       </TransitionPortal>
       <S.LayoutMain>{children}</S.LayoutMain>
