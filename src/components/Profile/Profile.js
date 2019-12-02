@@ -36,10 +36,10 @@ const Profile = () => {
         <Avatar />
         <S.ProfileAuthor>
           {title}
-          <S.ProfilePosition>{position}</S.ProfilePosition>
+          {/* <S.ProfilePosition>{position}</S.ProfilePosition> */}
+          <S.ProfileDescription>{description}</S.ProfileDescription>
         </S.ProfileAuthor>
       </S.ProfileLink>
-      <S.ProfileDescription>{description}</S.ProfileDescription>
     </S.ProfileWrapper>
   );
 };

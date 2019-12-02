@@ -5,11 +5,12 @@ export const SocialLinksWrapper = styled.nav`
   background-color: rgba(222, 222, 222, 0.5);
   padding: 0.3rem;
   border-radius: 0 10px 10px 0;
-  position: fixed;
+  margin-top: auto;
+  /* position: fixed;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10;
+  z-index: 10; */
 
   ${media.lessThan('large')`
     display: none;
@@ -18,10 +19,11 @@ export const SocialLinksWrapper = styled.nav`
 
 export const SocialLinksList = styled.ul`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   list-style: none;
+  min-width: 14rem;
 `;
 
 export const SocialLinksItem = styled.li``;

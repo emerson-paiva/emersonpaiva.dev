@@ -3,6 +3,8 @@ import media from 'styled-media-query';
 import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 export const MenuLinksWrapper = styled.nav`
+  width: 100%;
+
   ${media.lessThan('large')`
     display: none;
   `}
@@ -11,6 +13,7 @@ export const MenuLinksWrapper = styled.nav`
 export const MenuLinksList = styled.ul`
   font-size: 1.2rem;
   font-weight: 300;
+  text-align: center;
 `;
 
 export const MenuLinksItem = styled.li`
@@ -18,6 +21,16 @@ export const MenuLinksItem = styled.li`
 
   .active {
     color: var(--highlight);
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      background-color: var(--highlight);
+      position: absolute;
+      height: 100%;
+      width: 3px;
+    }
   }
 `;
 

@@ -6,7 +6,7 @@ module.exports = {
   siteMetadata: {
     title: `Emerson Paiva`,
     position: `Desenvolvedor Front End`,
-    description: `Minhas ideias pra esse blog? Ainda estou pensando nelas.`,
+    description: `Desenvolvedor Front End — Pseudo Cinéfilo — Indie Rock.`,
     author: `@emerpaiva`,
     siteUrl: `https://emersonpaiva.dev`,
   },
