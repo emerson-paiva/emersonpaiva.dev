@@ -1,150 +1,99 @@
-# PersonalBlog
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby's default starter
+</h1>
 
-A [GatsbyJS](https://www.gatsbyjs.org/) personal blog starter. <br /><br />
+Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-[![GitHub license][mit-badge]][mit]
-[![GitHub tag][tag-badge]][tag]
-[![GitHub stars][stars-badge]][stars]
-![contributors][contributors-badge]
-[![PRs Welcome][prs-badge]][prs]
-[![Code of Conduct][coc-badge]][coc]
-[![code style prettier][prettier-badge]][prettier]
-[![Tweet][twitter-badge]][twitter]
+_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
-  <br />
+## 🚀 Quick start
 
-![](static/screens/gatsby-starter-personal-blog.gif) <br />
+1.  **Create a Gatsby site.**
 
-  <br />
+    Use the Gatsby CLI to create a new site, specifying the default starter.
 
-See the starter in action » [demo website](https://gatsby-starter-personal-blog.greglobinski.com/) <br />For more information visit » [dev.greglobinski.com/gatsby-starter-personal-blog](https://dev.greglobinski.com/gatsby-starter-personal-blog/)
+    ```shell
+    # create a new Gatsby site using the default starter
+    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
+    ```
 
-## Description
+1.  **Start developing.**
 
-A ready to use, easy to customize [GatsbyJS](https://github.com/gatsbyjs/gatsby) personal blog starter with 'like app' layout transitions.
+    Navigate into your new site’s directory and start it up.
 
-## Features:
+    ```shell
+    cd my-default-starter/
+    gatsby develop
+    ```
 
-- Customizable
-- Easy editable content in Markdown files (posts, pages and parts)
-- Easily restyled through theme object
-- Styling with JSS
-- Comments (Facebook)
-- Post categories
-- Post list filtering
-- Full text searching (Algolia)
-- Contact form (Netlify form handling)
-- Material UI (@next)
-- RSS feed
-- Full screen mode
-- User adjustable articles’ body copy font size
-- Social sharing (Twitter, Facebook, Google, LinkedIn)
-- PWA (manifest.json, offline support, favicons)
-- Google Analytics
-- Favicons generator (node script)
-- Components lazy loading with AsyncComponent (social sharing, info box)
-- ESLint (google config)
-- Prettier code styling
-- Custom webpack CommonsChunkPlugin settings
-- Webpack BundleAnalyzerPlugin
+1.  **Open the source code and start editing!**
 
-## Prerequisites
+    Your site is now running at `http://localhost:8000`!
 
-If you do not have Gatsby Cli installed yet, do it first.
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-```text
-npm install --global gatsby-cli
-```
+    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
-More information on [GatsbyJS.org](https://www.gatsbyjs.org/tutorial/part-one)
+## 🧐 What's inside?
 
-## Getting started
+A quick look at the top-level files and directories you'll see in a Gatsby project.
 
-Install the starter using Gatsby Cli `gatsby new` command.
+    .
+    ├── node_modules
+    ├── src
+    ├── .gitignore
+    ├── .prettierrc
+    ├── gatsby-browser.js
+    ├── gatsby-config.js
+    ├── gatsby-node.js
+    ├── gatsby-ssr.js
+    ├── LICENSE
+    ├── package-lock.json
+    ├── package.json
+    └── README.md
 
-```text
-gatsby new [NEW_SITE_DIRECTORY_FOR_YOUR_BLOG] https://github.com/greglobinski/gatsby-starter-personal-blog.git
-```
+1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
-Go into the newly created directory and run
+2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
 
-```text
-gatsby develop
-```
+3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
-to hot-serve your website on http://localhost:8000 or
+4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
 
-```text
-gatsby build
-```
+5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
 
-to create static site ready to host (/public).
+6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-##### External services
+7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
-The starter uses external services for some functions: comments, searching, analytics. To use them you have to secure some access data. All services are free to use or have generous free tiers big enough for a personal blog.
+8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-Create an `.env` file like below in the root folder. Change `...` placeholders with real data.
+9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
 
-```text
-GOOGLE_ANALYTICS_ID=...
-ALGOLIA_APP_ID=...
-ALGOLIA_SEARCH_ONLY_API_KEY=...
-ALGOLIA_ADMIN_API_KEY=...
-ALGOLIA_INDEX_NAME=...
-FB_APP_ID=...
-```
+10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 
-### Instructions & tutorials
+11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
 
-- [How to install, setup and add new content to a Blog starter](https://dev.greglobinski.com/install-blog-starter/)
-- [How to customize the PersonalBlog starter's appearance](https://dev.greglobinski.com/customize-personal-blog-starter/)
-- [Setup Algolia account for your GatsbyJS blog](https://dev.greglobinski.com/setup-algolia-account/)
-- More articles soon at [Front-end web development with Greg](https://dev.greglobinski.com/)
+12. **`README.md`**: A text file containing useful reference information about your project.
 
-## Windows users
+## 🎓 Learning Gatsby
 
-You should take a look at this: [Gatsby on Windows](https://www.gatsbyjs.org/docs/gatsby-on-windows/)
+Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
 
-## Authors
+- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
-- Greg Lobinski [@greglobinski](https://github.com/greglobinski)
+- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
 
-See also the list of [contributors](https://github.com/greglobinski/gatsby-starter-personal-blog/graphs/contributors) who participated in this project.
+## 💫 Deploy
 
-## Contributing
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
-- Fork the repo
-- Create your feature branch (git checkout -b feature/fooBar)
-- Commit your changes (git commit -am 'Add some fooBar')
-- Push to the branch (git push origin feature/fooBar)
-- Create a new Pull Request
+[![Deploy with ZEIT Now](https://zeit.co/button)](https://zeit.co/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
 
-## Licence
-
-MIT License
-
-Copyright (c) 2017 gatsbyjs <br />Copyright (c) 2018 greg lobinski
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-[coc-badge]: https://img.shields.io/badge/code%20of-conduct-ff69b4.svg?style=flat-square
-[coc]: https://github.com/greglobinski/gatsby-starter-personal-blog/blob/master/CODE_OF_CONDUCT.md
-[prs-badge]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square
-[prs]: http://makeapullrequest.com
-[twitter]: https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fgreglobinski%2Fgatsby-starter-personal-blog
-[twitter-badge]: https://img.shields.io/twitter/url/https/github.com/greglobinski/gatsby-starter-personal-blog.svg?style=social
-[tag-badge]: https://img.shields.io/github/tag/greglobinski/gatsby-starter-personal-blog.svg
-[tag]: https://github.com/greglobinski/gatsby-starter-personal-blog
-[stars-badge]: https://img.shields.io/github/stars/greglobinski/gatsby-starter-personal-blog.svg
-[stars]: https://github.com/greglobinski/gatsby-starter-personal-blog/stargazers
-[contributors-badge]: https://img.shields.io/github/contributors/greglobinski/gatsby-starter-personal-blog.svg
-[prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square
-[prettier]: https://github.com/prettier/prettier
-[mit-badge]: https://img.shields.io/github/license/greglobinski/gatsby-starter-personal-blog.svg
-[mit]: https://github.com/greglobinski/gatsby-starter-personal-blog/blob/master/LICENSE
+<!-- AUTO-GENERATED-CONTENT:END -->
