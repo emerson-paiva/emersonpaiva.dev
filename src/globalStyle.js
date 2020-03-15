@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
   *,
   *::after,
   *::before {
@@ -14,7 +16,9 @@ const GlobalStyle = createGlobalStyle`
     font-size: 62.5%;
   }
 
-  body { }
+  body {
+    font-family: 'Ubuntu', sans-serif;
+  }
 `
 
 export default GlobalStyle
