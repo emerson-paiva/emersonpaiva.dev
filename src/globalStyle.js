@@ -19,6 +19,24 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'Ubuntu', sans-serif;
   }
+
+  button {
+    appearance: none;
+    border: none;
+    background: transparent;
+
+    color: inherit;
+    font: inherit;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    line-height: normal;
+
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 `
 
 export default GlobalStyle
