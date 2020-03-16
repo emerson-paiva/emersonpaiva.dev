@@ -57,7 +57,7 @@ export const NavItem = styled(Link)`
       position: absolute;
       right: -1.25rem;
       top: 50%;
-      transform: translateY(-50%);
+      transform: translate(50%, -50%);
     }
   }
 `
