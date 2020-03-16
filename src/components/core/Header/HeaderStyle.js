@@ -65,11 +65,12 @@ export const NavItem = styled(Link)`
 export const BtnModeChange = styled.button`
   cursor: pointer;
   display: block;
+  outline: none;
   height: 3rem;
   width: 3rem;
 
   & > svg {
-    fill: #cad02c;
+    fill: #d4d400;
     width: 100%;
   }
 `

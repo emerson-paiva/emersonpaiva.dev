@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import Header from 'components/Header'
+import Header from 'components/core/Header'
 import GlobalStyle from '../globalStyle'
 
 const Layout = ({ children }) => {
