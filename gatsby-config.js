@@ -1,12 +1,13 @@
 module.exports = {
   siteMetadata: {
     title: `Emerson Paiva`,
-    description: `Wait for it...`,
+    description: `Desenvolvedor Front End — Pseudo Cinéfilo — Indie Rock.`,
     author: `@indie_astronaut`,
     findMe: {
       linkedin: 'emerpaiva',
       github: 'emerpaiva',
     },
+    siteUrl: `https://emersonpaiva.dev`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
