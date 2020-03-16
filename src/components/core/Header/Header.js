@@ -15,7 +15,7 @@ const Avatar = () => (
   </S.Wrapper>
 )
 
-const Header = props => (
+const Header = () => (
   <S.Header>
     <Avatar />
     <S.Wrapper>
