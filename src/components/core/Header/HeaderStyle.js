@@ -45,19 +45,12 @@ export const NavItem = styled(Link)`
 
   &:not(:last-child) {
     color: #932096;
-    margin-right: 2.5rem;
 
     &::after {
-      content: '';
-      background-color: #646f8f;
-      border-radius: 50%;
-      display: block;
-      height: 0.5rem;
-      width: 0.5rem;
-      position: absolute;
-      right: -1.25rem;
-      top: 50%;
-      transform: translate(50%, -50%);
+      content: '•';
+      color: #414141;
+      display: inline-block;
+      margin: 0px 1rem;
     }
   }
 `
