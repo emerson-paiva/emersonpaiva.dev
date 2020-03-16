@@ -3,6 +3,10 @@ module.exports = {
     title: `Emerson Paiva`,
     description: `Wait for it...`,
     author: `@indie_astronaut`,
+    findMe: {
+      linkedin: 'emerpaiva',
+      github: 'emerpaiva',
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
