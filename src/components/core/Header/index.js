@@ -17,16 +17,18 @@ const Avatar = () => (
 
 const Header = () => (
   <S.Header>
-    <Avatar />
-    <S.Wrapper>
-      <S.Navbar>
-        <S.NavItem to="/about">hi</S.NavItem>
-        <S.NavItem to="/blog">blog</S.NavItem>
-      </S.Navbar>
-      <S.BtnModeChange>
-        <LightBulb />
-      </S.BtnModeChange>
-    </S.Wrapper>
+    <S.Container>
+      <Avatar />
+      <S.Wrapper>
+        <S.Navbar>
+          <S.NavItem to="/about">hi</S.NavItem>
+          <S.NavItem to="/blog">blog</S.NavItem>
+        </S.Navbar>
+        <S.BtnModeChange>
+          <LightBulb />
+        </S.BtnModeChange>
+      </S.Wrapper>
+    </S.Container>
   </S.Header>
 )
 

@@ -5,9 +5,14 @@ export const Header = styled.header`
   background-color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   padding: 1.2rem 4rem;
+`
+
+export const Container = styled.div`
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
+  max-width: 90rem;
+  margin: 0 auto;
 `
 
 export const Wrapper = styled.div`
