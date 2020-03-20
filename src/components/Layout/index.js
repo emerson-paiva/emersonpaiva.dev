@@ -1,32 +1,44 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { TransitionPortal } from 'gatsby-plugin-transition-link';
+import React from 'react'
+import PropTypes from 'prop-types'
+import { useStaticQuery, graphql } from 'gatsby'
 
-import Sidebar from '../Sidebar';
-import SocialLinks from '../SocialLinks';
-import MenuBar from '../MenuBar';
+import Header from 'components/core/Header'
+import Footer from 'components/core/Footer'
+import FindMe from 'components/core/FindMe'
 
-import * as S from './styled';
-import GlobalStyles from '../../styles/global';
+import GlobalStyle from '../../globalStyle'
 
 const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+          author
+          findMe {
+            linkedin
+            github
+          }
+        }
+      }
+    }
+  `)
+
+  const { title, author: twitter, findMe } = data.site.siteMetadata
+
   return (
-    <S.LayoutWrapper>
-      <GlobalStyles />
-      <TransitionPortal level="top">
-        {/* <SocialLinks /> */}
-        <Sidebar />
-      </TransitionPortal>
-      <S.LayoutMain>{children}</S.LayoutMain>
-      <TransitionPortal level="top">
-        <MenuBar />
-      </TransitionPortal>
-    </S.LayoutWrapper>
-  );
-};
+    <>
+      <GlobalStyle />
+      <Header siteTitle={title} />
+      <FindMe socialMedias={{ twitter, ...findMe }} />
+      <main>{children}</main>
+      <Footer />
+    </>
+  )
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-};
+}
 
-export default Layout;
+export default Layout
