@@ -15,6 +15,8 @@ const Layout = ({ children }) => {
         siteMetadata {
           title
           author
+          jobTitle
+          description
           findMe {
             linkedin
             github
@@ -29,7 +31,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <GlobalStyle />
-      <Header siteTitle={title} />
+      <Header />
       <FindMe socialMedias={{ twitter, ...findMe }} />
       <main>{children}</main>
       <Footer />
