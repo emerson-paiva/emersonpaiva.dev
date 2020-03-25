@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import Header from 'components/core/Header'
-import Footer from 'components/core/Footer'
-import FindMe from 'components/core/FindMe'
+import Header from 'components/Header'
+import Footer from 'components/Footer'
+import FindMe from 'components/FindMe'
 
 import GlobalStyle from '../../globalStyle'
 
@@ -13,7 +13,6 @@ const Layout = ({ children }) => {
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title
           author
           jobTitle
           description
@@ -26,7 +25,7 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const { title, author: twitter, findMe } = data.site.siteMetadata
+  const { author: twitter, findMe } = data.site.siteMetadata
 
   return (
     <>
