@@ -1,21 +1,22 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import * as S from './styled'
 
-const BioResume = () => {
-  const data = useStaticQuery(graphql`
-    query SiteMetadata {
-      site {
-        siteMetadata {
-          title
-          description
-          jobTitle
-        }
+const siteMetadataQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+        jobTitle
       }
     }
-  `)
+  }
+`
+
+const BioResume = () => {
+  const data = useStaticQuery(siteMetadataQuery)
 
   const { title, description, jobTitle } = data.site.siteMetadata
 
