@@ -1,7 +1,8 @@
 ---
 title: Hello World
-date: '2015-05-01T22:12:03.284Z'
+date: '2020-03-24'
 description: 'Hello World'
+thumbnail: './salty_egg.jpg'
 ---
 
 This is my first post on my new fake blog! How exciting!
