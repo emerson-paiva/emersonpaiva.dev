@@ -3,6 +3,8 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import PostItem from 'components/PostItem'
 
+import * as S from './styled'
+
 const postsQuery = graphql`
   query {
     firstPost: allMarkdownRemark(
@@ -14,7 +16,7 @@ const postsQuery = graphql`
           slug
         }
         frontmatter {
-          date
+          date(formatString: "DD MMM, YYYY", locale: "pt-Br")
           title
           tags
           thumbnail {
@@ -40,7 +42,7 @@ const postsQuery = graphql`
           slug
         }
         frontmatter {
-          date
+          date(formatString: "DD MMM, YYYY", locale: "pt-Br")
           title
           tags
         }
@@ -55,11 +57,11 @@ const PostsList = () => {
   const posts = [...firstPost.nodes, ...otherPosts.nodes]
 
   return (
-    <div className="posts-list">
+    <S.PostsWrapper className="posts-list">
       {posts?.map(post => (
         <PostItem key={post.fields.slug} post={post} />
       ))}
-    </div>
+    </S.PostsWrapper>
   )
 }
 
