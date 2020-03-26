@@ -1,5 +1,5 @@
 ---
-title: UAU EMERSON!
+title: Título da Postagem Bacana que Fizemos agora com no máximo duas linhas
 date: '2020-03-25'
 description: 'Hello World'
 thumbnail: './salty_egg.jpg'
