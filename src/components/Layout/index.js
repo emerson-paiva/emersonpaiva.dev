@@ -7,6 +7,7 @@ import Footer from 'components/Footer'
 import FindMe from 'components/FindMe'
 
 import GlobalStyle from '../../globalStyle'
+import * as S from './styled'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -32,7 +33,7 @@ const Layout = ({ children }) => {
       <GlobalStyle />
       <Header />
       <FindMe socialMedias={{ twitter, ...findMe }} />
-      <main>{children}</main>
+      <S.Main>{children}</S.Main>
       <Footer />
     </>
   )

@@ -21,11 +21,6 @@ export const Description = styled.p`
   line-height: 3rem;
 `
 
-export const Container = styled.div`
-  max-width: 70rem;
-  margin: 0 auto;
-`
-
 export const BioWrapper = styled.div`
   display: flex;
   flex-direction: column;
