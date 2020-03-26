@@ -9,6 +9,8 @@ import FindMe from 'components/FindMe'
 import GlobalStyle from '../../globalStyle'
 import * as S from './styled'
 
+import '../../fonts.css'
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
