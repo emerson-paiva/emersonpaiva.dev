@@ -1,6 +1,6 @@
 ---
-title: Hello World
-date: '2020-03-24'
+title: Hello World 2
+date: '2020-02-24'
 description: 'Hello World'
 thumbnail: './salty_egg.jpg'
 tags: ['JavaScript', 'React']
