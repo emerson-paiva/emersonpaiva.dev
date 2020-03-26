@@ -29,5 +29,5 @@ export const Container = styled.div`
 export const BioWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 26rem 0;
+  padding: 20rem 0;
 `
