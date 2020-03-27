@@ -24,10 +24,13 @@ const PostItem = ({ post }) => {
           <S.PostLabel>{date}</S.PostLabel>
           <S.PostLabel>{timeToRead}</S.PostLabel>
         </S.PostNotes>
-        <S.Title>{title}</S.Title>
+        <S.PostLink to={`/blog/${slug}`}>
+          <S.Title>{title}</S.Title>
+        </S.PostLink>
         <S.PostTags>
-          <S.PostLabel>#javascript</S.PostLabel>
-          <S.PostLabel>#opensource</S.PostLabel>
+          {tags?.map(tag => (
+            <S.PostLabel key={tag}>#{tag}</S.PostLabel>
+          ))}
         </S.PostTags>
       </S.PostDetails>
     </S.Post>
