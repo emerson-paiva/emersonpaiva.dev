@@ -3,7 +3,7 @@ title: Título da Postagem Bacana que Fizemos agora com no máximo duas linhas
 date: '2020-03-25'
 description: 'Hello World'
 thumbnail: './salty_egg.jpg'
-tags: ['JavaScript', 'React']
+tags: ['javascript', 'react']
 ---
 
 This is my first post on my new fake blog! How exciting!

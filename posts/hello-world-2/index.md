@@ -1,9 +1,9 @@
 ---
-title: Hello World 2
+title: Hello Westworld, mais conhecida como Brasil
 date: '2020-02-24'
-description: 'Hello World'
+description: 'Hello Westworld, mais conhecida como Brasil'
 thumbnail: './salty_egg.jpg'
-tags: ['JavaScript', 'React']
+tags: ['javascript', 'react']
 ---
 
 This is my first post on my new fake blog! How exciting!
