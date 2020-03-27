@@ -6,30 +6,34 @@ import PostItem from 'components/PostItem'
 import * as S from './styled'
 
 const postsQuery = graphql`
+  fragment mdFields on MarkdownRemark {
+    fields {
+      slug
+    }
+    frontmatter {
+      date(formatString: "DD MMM, YYYY", locale: "pt-Br")
+      title
+      tags
+    }
+    timeToRead
+  }
+
   query {
     firstPost: allMarkdownRemark(
       limit: 1
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       nodes {
-        fields {
-          slug
-        }
+        ...mdFields
         frontmatter {
-          date(formatString: "DD MMM, YYYY", locale: "pt-Br")
-          title
-          tags
           thumbnail {
-            id
             childImageSharp {
               fluid(maxWidth: 700) {
                 ...GatsbyImageSharpFluid
               }
             }
           }
-          tags
         }
-        timeToRead
       }
     }
     otherPosts: allMarkdownRemark(
@@ -38,15 +42,7 @@ const postsQuery = graphql`
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       nodes {
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "DD MMM, YYYY", locale: "pt-Br")
-          title
-          tags
-        }
-        timeToRead
+        ...mdFields
       }
     }
   }
@@ -57,11 +53,14 @@ const PostsList = () => {
   const posts = [...firstPost.nodes, ...otherPosts.nodes]
 
   return (
-    <S.PostsWrapper className="posts-list">
-      {posts?.map(post => (
-        <PostItem key={post.fields.slug} post={post} />
-      ))}
-    </S.PostsWrapper>
+    <>
+      <S.PostsWrapper>
+        {posts?.map(post => (
+          <PostItem key={post.fields.slug} post={post} />
+        ))}
+      </S.PostsWrapper>
+      <S.BlogLink to="/blog">ver todos os posts</S.BlogLink>
+    </>
   )
 }
 
