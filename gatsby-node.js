@@ -18,7 +18,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -43,12 +42,12 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const posts = result.data.allMarkdownRemark.edges
 
-  posts.forEach(post => {
+  posts.forEach(({node}) => {
     createPage({
-      path: `blog/${post.node.fields.slug}`,
-      component: blogPost,
+      path: `blog${node.fields.slug}`,
+      component: path.resolve(`./src/templates/blog-post.js`),
       context: {
-        slug: post.node.fields.slug,
+        slug: node.fields.slug,
       },
     })
   })

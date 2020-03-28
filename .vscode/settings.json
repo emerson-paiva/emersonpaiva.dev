@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": true,
+  "[javascriptreact]": {
+    "editor.formatOnSave": false
+  },
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "eslint.alwaysShowStatus": true,
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  "files.autoSave": "off",
+  "prettier.disableLanguages": ["js"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
