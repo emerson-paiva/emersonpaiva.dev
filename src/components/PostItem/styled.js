@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import Img from 'gatsby-image'
 
 export const Post = styled.article`
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
@@ -19,16 +20,11 @@ export const Post = styled.article`
 `
 
 export const CoverWrapper = styled.div`
-  margin: 0 auto;
-  max-height: 30rem;
   overflow: hidden;
   width: 100%;
 `
 
-export const Cover = styled.img`
-  max-height: 40rem;
-  height: auto;
-  object-fit: cover;
+export const Cover = styled(Img)`
   width: 100%;
 `
 

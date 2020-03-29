@@ -4,9 +4,9 @@ import * as S from './styled'
 
 const getTimeToRead = time => `${time} min de leitura`
 
-const RenderCover = (imgUrl, alt) => (
+const RenderCover = (cover, alt) => (
   <S.CoverWrapper>
-    <S.Cover src={imgUrl} alt={alt} />
+    <S.Cover fluid={cover} alt={alt} />
   </S.CoverWrapper>
 )
 
@@ -14,7 +14,7 @@ const PostItem = ({ post }) => {
   const { slug } = post.fields
   const { title, date, tags, thumbnail } = post.frontmatter
   const timeToRead = getTimeToRead(post.timeToRead)
-  const cover = thumbnail?.childImageSharp?.fluid?.src
+  const cover = thumbnail?.childImageSharp?.fluid
 
   return (
     <S.Post>
