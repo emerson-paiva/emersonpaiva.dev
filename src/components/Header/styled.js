@@ -4,8 +4,13 @@ import { Link } from 'gatsby'
 export const Header = styled.header`
   background-color: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 7.2rem;
   padding: 1.2rem 4rem;
-`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+ `
 
 export const Container = styled.div`
   display: flex;
@@ -28,9 +33,9 @@ export const Name = styled.h1`
 
 export const Avatar = styled.img`
   border-radius: 50%;
-  height: 48px;
   margin-right: 2rem;
-  width: 48px;
+  height: 4.8rem;
+  width: 4.8rem;
 `
 
 export const Navbar = styled.nav`
@@ -43,8 +48,8 @@ export const Navbar = styled.nav`
 
 export const NavItem = styled(Link)`
   color: #414141;
-  font-size: 2.6rem;
-  font-weight: 500;
+  font-size: 1.7rem;
+  font-weight: 600;
   text-decoration: none;
   position: relative;
 
