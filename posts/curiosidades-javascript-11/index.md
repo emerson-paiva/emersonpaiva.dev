@@ -1,9 +1,9 @@
 ---
-title: 'Semana Omnistack #11'
+title: 'Curiosidades sobre JS #11'
 date: '2020-03-29'
 description: 'Hello Westworld, mais conhecida como Brasil'
 thumbnail: './cover.jpg'
-tags: ['react', 'rocketseat']
+tags: ['react', 'javascript']
 ---
 
 This is my first post on my new fake blog! How exciting!

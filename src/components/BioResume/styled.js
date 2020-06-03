@@ -1,22 +1,22 @@
 import styled from 'styled-components'
 
 export const Title = styled.h1`
-  color: #414141;
+  color: var(--color-white-100);
   font-size: 6.4rem;
 
   & > span {
-    color: #932096;
+    color: var(--color-primary);
   }
 `
 
 export const JobTitle = styled.h2`
-  color: #414141;
+  color: var(--color-white-100);
   font-size: 2rem;
   margin-bottom: 4rem;
 `
 
 export const Description = styled.p`
-  color: #414141;
+  color: var(--color-white-100);
   font-size: 2rem;
   line-height: 3rem;
 `

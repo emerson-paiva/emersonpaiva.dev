@@ -5,9 +5,10 @@ import Img from 'gatsby-image'
 export const Post = styled.article`
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
   border-radius: 0.3rem;
+  color: var(--color-white-100);
   overflow: hidden;
   position: relative;
-  transition: box-shadow 0.3s linear;
+  transition: all 0.2s linear;
   width: 100%;
 
   &:not(:last-child) {
@@ -16,6 +17,7 @@ export const Post = styled.article`
 
   &:hover {
     box-shadow: 0rem 0.6rem 0.6rem rgba(0, 0, 0, 0.25);
+    color: var(--color-primary);
   }
 `
 
@@ -59,14 +61,13 @@ export const PostTags = styled.div`
 `
 
 export const PostLabel = styled.span`
-  color: #414141;
+  color: var(--color-white-100);
   font-style: normal;
   font-size: 1.6rem;
   font-weight: 300;
 `
 
 export const Title = styled.h3`
-  color: #000000;
   font-style: normal;
   font-weight: 500;
   font-size: 3.6rem;

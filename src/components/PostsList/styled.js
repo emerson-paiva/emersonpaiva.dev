@@ -9,14 +9,14 @@ export const PostsWrapper = styled.section`
 `
 
 export const BlogLink = styled(Link)`
-  color: #932096;
+  color: var(--color-primary);
   display: table;
   margin: 0 auto;
   font-size: 1.8rem;
   position: relative;
 
   &::before {
-    background-color: #932096;
+    background-color: var(--color-primary);
     content: '';
     position: absolute;
     bottom: -0.5rem;

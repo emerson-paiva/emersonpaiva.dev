@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const Header = styled.header`
-  background-color: #fff;
+  background-color: var(--color-background);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   height: 7.2rem;
   padding: 1.2rem 4rem;
@@ -27,9 +27,14 @@ export const Wrapper = styled.div`
 `
 
 export const Name = styled.h1`
-  color: #414141;
+  color: var(--color-white-100);
   font-size: 2.2rem;
   font-weight: normal;
+  transition: all .2s linear;
+
+  &:hover {
+    color: var(--color-primary);
+  }
 `
 
 export const Avatar = styled.img`
@@ -48,18 +53,18 @@ export const Navbar = styled.nav`
 `
 
 export const NavItem = styled(Link)`
-  color: #414141;
+  color: var(--color-white-100);
   font-size: 1.7rem;
   font-weight: 600;
   text-decoration: none;
   position: relative;
 
   &:not(:last-child) {
-    color: #932096;
+    color: var(--color-primary);
 
     &::after {
       content: '•';
-      color: #414141;
+      color: var(--color-white-100);
       display: inline-block;
       margin: 0px 1rem;
     }
@@ -74,7 +79,7 @@ export const BtnModeChange = styled.button`
   width: 3rem;
 
   & > svg {
-    fill: #d4d400;
+    fill: #434343;
     width: 100%;
   }
 `

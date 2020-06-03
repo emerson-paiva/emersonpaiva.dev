@@ -9,12 +9,19 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: inherit;
   }
 
+  :root {
+    --color-primary: #794BC4;
+    --color-background: #15202B;
+    --color-white-100: #f3f3f3;
+  }
+
   html {
     box-sizing: border-box;
     font-size: 62.5%;
   }
 
   body {
+    background-color: var(--color-background);
     font-family: 'Ubuntu', sans-serif;
   }
 

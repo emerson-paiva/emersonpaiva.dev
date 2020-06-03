@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const FindMeWrapper = styled.div`
-  background-color: #fff;
+  background-color: var(--color-background);
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
   border-radius: 0px 2px 2px 0px;
   position: fixed;
@@ -14,13 +14,18 @@ export const FindMeWrapper = styled.div`
 `
 
 export const Link = styled.a`
-  color: #414141;
+  color: var(--color-white-100);
   cursor: pointer;
   display: block;
   height: 3rem;
   width: 3rem;
+  transition: all .2s linear;
 
   &:not(:last-child) {
     margin-bottom: 2rem;
+  }
+
+  &:hover {
+    color: var(--color-primary);
   }
 `

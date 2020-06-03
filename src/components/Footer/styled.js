@@ -7,7 +7,7 @@ export const Footer = styled.footer`
 `
 
 export const Span = styled.span`
-  color: #414141;
+  color: var(--color-white-100);
   font-weight: 500;
   font-size: 1.6rem;
 `
