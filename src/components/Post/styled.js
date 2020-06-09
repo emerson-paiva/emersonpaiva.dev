@@ -3,7 +3,7 @@ import Img from 'gatsby-image'
 
 export const Cover = styled(Img)`
   margin-top: 7.2rem;
-  height: 40rem;
-  max-height: 30vw;
+  height: 100%;
+  max-height: 50vh;
   width: 100%;
 `

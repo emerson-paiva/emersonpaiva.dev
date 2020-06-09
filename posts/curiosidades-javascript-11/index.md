@@ -4,6 +4,7 @@ date: '2020-03-29'
 description: 'Hello Westworld, mais conhecida como Brasil'
 thumbnail: './cover.jpg'
 tags: ['react', 'javascript']
+slug: 'curiosidades-javascript-11'
 ---
 
 This is my first post on my new fake blog! How exciting!

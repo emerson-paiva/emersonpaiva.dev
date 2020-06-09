@@ -54,8 +54,8 @@ module.exports = {
         name: `Emerson Paiva`,
         short_name: `Emerson Paiva`,
         start_url: `/`,
-        background_color: `#6d01a5`,
-        theme_color: `#6d01a5`,
+        background_color: `#794bc4`,
+        theme_color: `#794bc4`,
         display: `minimal-ui`,
         icon: `src/images/icon.png`, // This path is relative to the root of the site.
       },
