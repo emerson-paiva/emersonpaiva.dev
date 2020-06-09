@@ -13,6 +13,9 @@ const GlobalStyle = createGlobalStyle`
     --color-primary: #794BC4;
     --color-background: #15202B;
     --color-white-100: #f3f3f3;
+    --color-white-200: #cecece;
+
+    --title: 4.8rem;
   }
 
   html {
