@@ -25,9 +25,9 @@ export const PostView = styled.div`
   height: 100%;
   max-width: 100rem;
   width: 100%;
-  padding: 7rem;
+  padding: 5rem 7rem;
   position: absolute;
-  top: -24rem;
+  top: -20rem;
 `
 
 export const PostTitle = styled.h1`
@@ -35,17 +35,24 @@ export const PostTitle = styled.h1`
   font-size: var(--title);
   position: absolute;
   top: -40rem;
+  line-height: 1.4;
 `
 
 export const PostExcerpt = styled.div`
   color: var(--color-white-200);
-  font-size: 2.4rem;
-  height: 17rem;
+  font-size: 2rem;
+  height: 15rem;
+  line-height: 1.4;
+
+  display: flex;
+  align-items: center;
+  padding-bottom: 5rem;
 `
 
-export const PostContent = styled.div`
+export const PostContent = styled.article`
   color: var(--color-white-100);
-  font-size: 2.4rem;
+  font-size: 2rem;
+  line-height: 1.4;
 
   p {
     margin-bottom: 2.4rem;
