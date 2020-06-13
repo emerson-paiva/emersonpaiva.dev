@@ -11,6 +11,7 @@ export const FindMeWrapper = styled.div`
   padding: 2rem 1.2rem;
   display: flex;
   flex-direction: column;
+  z-index: 100;
 `
 
 export const Link = styled.a`

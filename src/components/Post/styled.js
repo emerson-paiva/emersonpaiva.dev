@@ -22,6 +22,7 @@ export const Cover = styled(Img)`
 export const PostView = styled.div`
   background: var(--color-background);
   border-radius: 4rem;
+  font-weight: 400;
   height: 100%;
   max-width: 100rem;
   width: 100%;
@@ -34,8 +35,9 @@ export const PostTitle = styled.h1`
   color: var(--color-white-100);
   font-size: var(--title);
   position: absolute;
-  top: -40rem;
+  top: -42rem;
   line-height: 1.4;
+  text-align: center;
 `
 
 export const PostExcerpt = styled.div`

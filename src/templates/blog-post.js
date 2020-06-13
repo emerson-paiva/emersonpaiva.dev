@@ -17,6 +17,7 @@ const BlogPost = ({ data: { markdownRemark } }) => {
           <S.PostExcerpt>Lucas ipsum dolor sit amet fett sidious hutt luke binks chewbacca kamino bespin hutt leia. Leia calamari k-3po dooku darth calamari antilles. Coruscant darth han chewbacca. Organa mace solo skywalker. Wedge darth mon darth wicket gamorrean qui-gonn bothan ackbar.</S.PostExcerpt>
           {/* <S.PostContent dangerouslySetInnerHTML={{ __html: html }} /> */}
           <S.PostContent>
+            <h2>Introdução</h2>
             <p>
               Lucas ipsum dolor sit amet fett sidious hutt luke binks chewbacca kamino bespin hutt leia. Leia calamari k-3po dooku darth calamari antilles. Coruscant darth han chewbacca. Organa mace solo skywalker. Wedge darth mon darth wicket gamorrean qui-gonn bothan ackbar. Darth chewbacca bespin vader. Ben c-3p0 calrissian jinn bothan. Vader darth jinn skywalker darth jar sebulba palpatine coruscant. Palpatine grievous darth jango kenobi. Sidious vader dantooine gonk yoda gamorrean. Dooku ewok ben mara jango organa.
             </p>
