@@ -23,9 +23,9 @@ const BioResume = () => {
   return (
     <S.BioWrapper>
       <S.Title>
-        Hello
+        Olá
         <br />
-        I'm <span>{title}</span>
+        Eu sou <span>{title}</span>
       </S.Title>
       <S.JobTitle>{jobTitle}</S.JobTitle>
       <S.Description>{description}</S.Description>
