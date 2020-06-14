@@ -7,6 +7,6 @@ slug: 'hello-world'
 excerpt: 'Olá pessoa amavél da internet que de alguma forma desconhecida chegou até aqui, seja muito bem vindo (a)!'
 ---
 
-Tenho trabalhado em algumas ideias para esse blog, mas o que eu posso te garantir é que logo logo teremos ~~algumas~~ postagens relacionadas ao desenvolvimento **Front End**.
+Tenho trabalhado em algumas ideias para esse blog, mas o que eu posso te garantir é que logo logo teremos ~~várias~~ postagens relacionadas ao desenvolvimento **Front End**.
 
 Então, escolha um assento e vamos embarcar nessa jornada comigo.
