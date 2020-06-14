@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Title = styled.h1`
   color: var(--color-white-100);
-  font-size: 6.4rem;
+  font-size: 6.2rem;
 
   & > span {
     color: var(--color-primary);

@@ -4,7 +4,8 @@ import { Link } from 'gatsby'
 export const PostsWrapper = styled.section`
   display: flex;
   flex-direction: column;
-  margin-bottom: 10rem;
+  margin: 0 auto 10rem;
+  max-width: 70rem;
   width: 100%;
 `
 
