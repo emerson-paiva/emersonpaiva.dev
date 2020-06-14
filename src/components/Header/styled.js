@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 export const Header = styled.header`
   background-color: var(--color-background);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
   height: 7.2rem;
   padding: 1.2rem 4rem;
   position: fixed;
