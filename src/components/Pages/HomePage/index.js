@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
-export const Main = styled.main`
+export const HomePage = styled.div`
   height: 100%;
-  max-width: 86rem;
+  max-width: 70rem;
   margin: 0 auto 20rem;
+  padding: 0 2rem;
 `
