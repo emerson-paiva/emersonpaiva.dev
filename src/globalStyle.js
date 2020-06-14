@@ -25,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: var(--color-background);
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
