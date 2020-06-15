@@ -131,7 +131,7 @@ export const PostContent = styled.article`
   }
 
   blockquote {
-    color: var(--postColor);
+    color: var(--color-white-100);
     border-left: 0.3rem solid var(--highlight);
     padding: 0 1.875rem;
     margin: 3.125rem auto;
@@ -210,13 +210,13 @@ export const PostContent = styled.article`
   }
 
   a {
-    border-bottom: 1px dashed var(--highlight);
-    color: var(--highlight);
+    border-bottom: 1px dashed var(--color-primary);
+    color: var(--color-primary);
     text-decoration: none;
     transition: opacity 0.5s;
 
     svg {
-      color: var(--postColor);
+      color: var(--color-white-100);
     }
 
     &:hover {

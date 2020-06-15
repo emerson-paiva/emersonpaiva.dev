@@ -24,6 +24,10 @@ export const Post = styled.article`
 export const CoverWrapper = styled.div`
   overflow: hidden;
   width: 100%;
+  max-height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export const Cover = styled(Img)`

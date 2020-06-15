@@ -24,9 +24,10 @@ const Header = () => (
           <S.NavItem to="/about">hi</S.NavItem>
           <S.NavItem to="/blog">blog</S.NavItem>
         </S.Navbar>
-        <S.BtnModeChange>
+          {/* TODO add toggle dark mode */}
+        {/* <S.BtnModeChange>
           <LightBulb />
-        </S.BtnModeChange>
+        </S.BtnModeChange> */}
       </S.Wrapper>
     </S.Container>
   </S.Header>
