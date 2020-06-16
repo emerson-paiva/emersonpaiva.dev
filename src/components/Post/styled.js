@@ -94,7 +94,11 @@ export const PostContent = styled.article`
   h3,
   h4,
   h5 {
-    margin: 2.4rem auto 1rem;
+    margin: 3.2rem auto 1rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   ul,
@@ -122,7 +126,16 @@ export const PostContent = styled.article`
   img {
     display: block;
     max-width: 100%;
-    margin: 1.875rem auto;
+    margin: 1.875rem auto 1rem;
+
+    & + em {
+      color: var(--color-white-200);
+      display: block;
+      font-style: normal;
+      font-size: 1.2rem;
+      text-align: center;
+      margin: 0 auto;
+    }
   }
 
   iframe {
