@@ -2,11 +2,13 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from 'components/Layout'
 import SEO from 'components/seo'
+import Comments from 'components/Comments'
 import * as S from 'components/Post/styled'
 
 const BlogPost = ({ data: { markdownRemark } }) => {
   const { frontmatter, html } = markdownRemark
   const { coverCredits } = frontmatter
+  const { title, slug, excerpt } = frontmatter
 
   return (
     <>
@@ -18,15 +20,14 @@ const BlogPost = ({ data: { markdownRemark } }) => {
         </a>
       </S.CoverCredit>
       <Layout>
-        <SEO title={frontmatter.title} />
+        <SEO title={title} />
         <S.PostTitleWrapper>
-          <S.PostTitle>{frontmatter.title}</S.PostTitle>
+          <S.PostTitle>{title}</S.PostTitle>
         </S.PostTitleWrapper>
         <S.PostView>
-          <S.PostExcerpt
-            dangerouslySetInnerHTML={{ __html: frontmatter.excerpt }}
-          />
+          <S.PostExcerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
           <S.PostContent dangerouslySetInnerHTML={{ __html: html }} />
+          <Comments title={title} slug={slug} />
         </S.PostView>
       </Layout>
     </>
@@ -42,6 +43,7 @@ export const query = graphql`
         title
         tags
         excerpt
+        slug
         coverCredits {
           link
           name
