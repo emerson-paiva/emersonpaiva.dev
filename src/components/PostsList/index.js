@@ -1,8 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-
 import PostItem from 'components/PostItem'
-
 import * as S from './styled'
 
 const postsQuery = graphql`
@@ -19,8 +17,8 @@ const postsQuery = graphql`
   }
 
   query {
-    firstPost: allMarkdownRemark(
-      limit: 1
+    posts: allMarkdownRemark(
+      limit: 3
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       nodes {
@@ -28,7 +26,7 @@ const postsQuery = graphql`
         frontmatter {
           thumbnail {
             childImageSharp {
-              fluid(maxWidth: 1024, quality: 100) {
+              fluid(maxWidth: 700, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -36,21 +34,11 @@ const postsQuery = graphql`
         }
       }
     }
-    otherPosts: allMarkdownRemark(
-      limit: 2
-      skip: 1
-      sort: { fields: frontmatter___date, order: DESC }
-    ) {
-      nodes {
-        ...mdFields
-      }
-    }
   }
 `
 
 const PostsList = () => {
-  const { firstPost, otherPosts } = useStaticQuery(postsQuery)
-  const posts = [...firstPost.nodes, ...otherPosts.nodes]
+  const { posts: {nodes: posts} } = useStaticQuery(postsQuery)
 
   return (
     <>

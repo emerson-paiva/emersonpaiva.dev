@@ -18,6 +18,10 @@ export const Cover = styled(Img)`
     right: 0;
     bottom: 0;
   }
+
+  ${media.lessThan("medium")`
+    max-height: 30rem;
+  `}
 `
 
 export const PostView = styled.div`
@@ -31,12 +35,21 @@ export const PostView = styled.div`
   position: relative;
   top: -20rem;
   width: 100%;
+
+  ${media.lessThan("medium")`
+    padding: 0 5rem 3rem;
+    top: 0;
+  `}
 `
 
 export const PostTitle = styled.h1`
   color: var(--color-white-100);
   font-size: var(--title);
   line-height: 1.4;
+
+  ${media.lessThan("medium")`
+    font-size: var(--mobile-title);
+  `}
 `
 
 export const PostTitleWrapper = styled.div`
@@ -51,6 +64,17 @@ export const PostTitleWrapper = styled.div`
   max-width: 86rem;
   margin-top: 7.2rem;
   width: 100%;
+
+  ${media.lessThan("medium")`
+    position: relative;
+    max-width: 86rem;
+    top: unset;
+    left: unset;
+    transform: unset;
+    margin-top: unset;
+    height: auto;
+    padding: 3rem 5rem;
+  `}
 `
 
 export const PostExcerpt = styled.div`
@@ -62,6 +86,10 @@ export const PostExcerpt = styled.div`
   display: flex;
   align-items: center;
   padding-bottom: 5rem;
+
+  ${media.lessThan("medium")`
+    padding-bottom: 2rem;
+  `}
 `
 
 export const PostContent = styled.article`
@@ -238,8 +266,6 @@ export const PostContent = styled.article`
   }
 
   ${media.lessThan('large')`
-    padding: 2rem;
-
     h1 {
       font-size: 2.6rem;
     }
@@ -259,9 +285,5 @@ export const PostContent = styled.article`
     h5 {
       font-size: 1rem;
     }
-  `}
-
-  ${media.lessThan('small')`
-    padding: 1rem;
   `}
 `;

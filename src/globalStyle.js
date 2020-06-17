@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import media from "styled-media-query";
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -16,11 +17,16 @@ const GlobalStyle = createGlobalStyle`
     --color-white-200: #d0d0d0;
 
     --title: 4.8rem;
+    --mobile-title: 3.6rem;
   }
 
   html {
     box-sizing: border-box;
     font-size: 62.5%;
+
+    ${media.lessThan("small")`
+      font-size: 55%;
+    `}
   }
 
   body {

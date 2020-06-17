@@ -1,8 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-
 import PostItem from 'components/PostItem'
-
 import * as S from './styled'
 
 const postsQuery = graphql`
@@ -55,7 +53,7 @@ const BlogPost = () => {
   return (
     <>
       <S.PostsWrapper>
-        {posts?.map(post => (
+        {posts?.map((post) => (
           <PostItem key={post.fields.slug} post={post} />
         ))}
       </S.PostsWrapper>

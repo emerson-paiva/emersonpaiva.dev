@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Emerson Paiva`,
-    jobTitle: `Desenvolvedor Front End — Pseudo Cinéfilo — Indie Rock.`,
+    jobTitle: `Desenvolvedor Front End — Cinéfilo — Indie Rock.`,
     description: `Seja muito bem vindo(a) ao meu novo blog! Aqui eu vou compartilhar um pouco do conhecimento adquirido na minha jornada como desenvolvedor Front End!`,
     author: `@oemersonpaiva`,
     findMe: {

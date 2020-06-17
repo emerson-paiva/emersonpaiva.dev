@@ -12,7 +12,7 @@ export const Post = styled.article`
   width: 100%;
 
   &:not(:last-child) {
-    margin-bottom: 4rem;
+    margin-bottom: 4.8rem;
   }
 
   &:hover {
