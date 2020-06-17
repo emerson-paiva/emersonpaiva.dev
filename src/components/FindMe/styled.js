@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import media from "styled-media-query";
 
 export const FindMeWrapper = styled.div`
   background-color: var(--color-background);
@@ -11,7 +12,18 @@ export const FindMeWrapper = styled.div`
   padding: 2rem 1.2rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   z-index: 100;
+
+  ${media.lessThan("medium")`
+    flex-direction: row;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: unset;
+    transform: unset;
+    padding: 1rem 1.2rem;
+  `}
 `
 
 export const Link = styled.a`
@@ -24,6 +36,10 @@ export const Link = styled.a`
 
   &:not(:last-child) {
     margin-bottom: 2rem;
+
+    ${media.lessThan("medium")`
+      margin-bottom: 0;
+    `}
   }
 
   &:hover {

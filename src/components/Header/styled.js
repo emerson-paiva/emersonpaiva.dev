@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
+import media from "styled-media-query";
 
 export const Header = styled.header`
   background-color: var(--color-background);
@@ -11,6 +12,10 @@ export const Header = styled.header`
   left: 0;
   width: 100%;
   z-index: 50;
+
+  ${media.lessThan("medium")`
+    padding: 1.2rem 2rem;
+  `}
  `
 
 export const Container = styled.div`
@@ -49,7 +54,10 @@ export const Navbar = styled.nav`
   align-items: center;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
   padding-right: 1.75rem;
-  margin-right: 1.25rem;
+
+  &:not(:last-child) {
+    margin-right: 1.25rem;
+  }
 `
 
 export const NavItem = styled(Link)`
