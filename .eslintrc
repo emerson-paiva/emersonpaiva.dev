@@ -2,13 +2,8 @@
   "globals": {
     "__PATH_PREFIX__": true
   },
-  "extends": [
-    "airbnb"
-  ],
-  "plugins": [
-    "react",
-    "prettier"
-  ],
+  "extends": ["airbnb"],
+  "plugins": ["react", "prettier"],
   "parser": "babel-eslint",
   "env": {
     "node": true,
@@ -17,21 +12,14 @@
   },
   "rules": {
     "comma-dangle": "off",
-    "quotes": [
-      2,
-      "semi",
-      "avoid-escape"
-    ],
+    "quotes": [2, "semi", "avoid-escape"],
     "linebreak-style": 0,
     "jsx-a11y/label-has-associated-control": [
       2,
       {
         "components": [],
         "required": {
-          "some": [
-            "nesting",
-            "id"
-          ]
+          "some": ["nesting", "id"]
         },
         "allowChildren": true
       }
@@ -41,10 +29,7 @@
     "react/jsx-filename-extension": [
       1,
       {
-        "extensions": [
-          ".js",
-          ".jsx"
-        ]
+        "extensions": [".js", ".jsx"]
       }
     ],
     "import/prefer-default-export": "off",
@@ -56,10 +41,7 @@
     },
     "import/resolver": {
       "node": {
-        "moduleDirectory": [
-          "node_modules",
-          "src/"
-        ]
+        "moduleDirectory": ["node_modules", "src/"]
       }
     }
   }
