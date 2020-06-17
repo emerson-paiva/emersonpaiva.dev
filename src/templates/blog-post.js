@@ -5,11 +5,18 @@ import SEO from 'components/seo'
 import * as S from 'components/Post/styled'
 
 const BlogPost = ({ data: { markdownRemark } }) => {
-  const { frontmatter, html } = markdownRemark;
+  const { frontmatter, html } = markdownRemark
+  const { coverCredits } = frontmatter
 
   return (
     <>
       <S.Cover fluid={frontmatter.thumbnail.childImageSharp.fluid} />
+      <S.CoverCredit>
+        Créditos:{' '}
+        <a href={coverCredits.link} target="_blank">
+          {coverCredits.name}
+        </a>
+      </S.CoverCredit>
       <Layout>
         <SEO title={frontmatter.title} />
         <S.PostTitleWrapper>
@@ -35,6 +42,10 @@ export const query = graphql`
         title
         tags
         excerpt
+        coverCredits {
+          link
+          name
+        }
         date(formatString: "DD MMM, YYYY", locale: "pt-Br")
         thumbnail {
           childImageSharp {
