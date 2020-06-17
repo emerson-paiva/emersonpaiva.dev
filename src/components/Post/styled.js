@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import media from "styled-media-query";
+import media from 'styled-media-query'
 import Img from 'gatsby-image'
 
 export const Cover = styled(Img)`
@@ -9,9 +9,13 @@ export const Cover = styled(Img)`
   width: 100%;
 
   &::after {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.65) 50%, rgba(121, 75, 196, 0.65) 90%);
-    opacity: .6;
-    content: "";
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.65) 50%,
+      rgba(121, 75, 196, 0.65) 90%
+    );
+    opacity: 0.6;
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -19,8 +23,27 @@ export const Cover = styled(Img)`
     bottom: 0;
   }
 
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     max-height: 30rem;
+  `}
+`
+
+export const CoverCredit = styled.div`
+  color: var(--color-white-200);
+  font-size: 1.4rem;
+  position: absolute;
+  top: 54rem;
+  right: 1rem;
+  opacity: 0.7;
+  transition: all 0.3s linear;
+
+  &:hover {
+    color: var(--color-primary);
+    opacity: 1;
+  }
+
+  ${media.lessThan('large')`
+    top: 8rem;
   `}
 `
 
@@ -36,7 +59,7 @@ export const PostView = styled.div`
   top: -20rem;
   width: 100%;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     padding: 0 5rem 3rem;
     top: 0;
   `}
@@ -47,7 +70,7 @@ export const PostTitle = styled.h1`
   font-size: var(--title);
   line-height: 1.4;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     font-size: var(--mobile-title);
   `}
 `
@@ -65,7 +88,7 @@ export const PostTitleWrapper = styled.div`
   margin-top: 7.2rem;
   width: 100%;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     position: relative;
     max-width: 86rem;
     top: unset;
@@ -87,7 +110,7 @@ export const PostExcerpt = styled.div`
   align-items: center;
   padding-bottom: 5rem;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     padding-bottom: 2rem;
   `}
 `
@@ -286,4 +309,4 @@ export const PostContent = styled.article`
       font-size: 1rem;
     }
   `}
-`;
+`
