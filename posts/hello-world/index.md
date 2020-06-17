@@ -1,10 +1,10 @@
 ---
-title: 'Hello World 👨‍🚀'
+title: 'Olá, Mundo 👨‍🚀'
 date: '2020-06-23'
 thumbnail: './cover.jpg'
 tags: ['welcome']
 slug: 'hello-world'
-excerpt: 'Olá pessoa amavél da internet que de alguma forma desconhecida chegou até aqui, seja muito bem vindo (a)!'
+excerpt: 'Olá, pessoa que de alguma forma chegou até aqui. Esse é o meu mais novo projeto, espero que goste e seja muito bem vindo (a)!'
 ---
 
 # O Começo
