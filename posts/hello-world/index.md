@@ -11,17 +11,19 @@ coverCredits: {
 }
 ---
 
-# O Começo
+# Game On
 
-Como já deve ter percebido, meu nome é Emerson, hoje (23/06) estou completando 25 anos (parabéns pra mim🎉) e após um bom tempo deixando o projeto de lado, escolhi como presente de aniversário dar o ponta pé inicial nesse blog (agora vai).
+Como já deve ter percebido, meu nome é Emerson Paiva, hoje (23/06) estou completando 25 anos (parabéns pra mim🎉) e após um bom tempo deixando esse projeto de lado, escolhi como presente de aniversário dar o ponta pé inicial nesse blog (agora vai).
 
 # Meus Planos
 
-Tenho trabalhado em algumas ideias para esse blog, mas o que eu posso te garantir é que logo teremos ~~várias~~ postagens relacionadas ao desenvolvimento **Front End**.
+Tenho trabalhado em algumas ideias para esse blog, mas o que eu posso te garantir é que logo teremos ~~várias~~ postagens relacionadas ao desenvolvimento **Front End** e bastante React.js.
 
 ![Plans](https://media.giphy.com/media/26ufhYjBs6C4Q5SJG/giphy.gif)
 *[South Park](https://pt.wikipedia.org/wiki/South_Park)*
 
-O necessário para começar a publicação de conteúdo já está online e já tenho algumas anotações no [Notion](https://www.notion.so/) sobre alguns conteúdos relacionadas a React.js. Porém, nos meus planos estão conteúdos mais pessoas, como recomendações semanais de músicas, filmes etc., então não se espante se acabar encontrando uma citação a filmes como _(500) Days of Summer_. Mas tentarei deixar o maios organizado possível, afinal, eu quero que você volte 🙂.
+Tenho algumas anotações no meu [Notion](https://www.notion.so/) sobre conteúdos relacionados ao mundo _front end_. Meu objetivo primário é compartilhar conteúdo de tecnológia, porém, nos meus planos estão conteúdos mais pessoas (prometo deixar isso em uma seção totalmente separada, para não desviar nosso foco aqui), como recomendações de músicas, filmes etc., então não se espante se acabar encontrando uma citação a filmes como _(500) Days of Summer_.
 
-Então, escolha um assento e vamos embarcar nessa jornada comigo.
+Então, escolha um assento e vamos embarcar nessa jornada comigo. 🙂
+
+Obrigado por chegar até aqui!
