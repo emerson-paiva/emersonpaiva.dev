@@ -3,12 +3,12 @@ import { graphql } from 'gatsby'
 import Layout from 'components/Layout'
 import SEO from 'components/seo'
 import Comments from 'components/Comments'
+import { getTimeToRead } from 'components/PostItem'
 import * as S from 'components/Post/styled'
 
 const BlogPost = ({ data: { markdownRemark } }) => {
-  const { frontmatter, html } = markdownRemark
-  const { coverCredits } = frontmatter
-  const { title, slug, excerpt } = frontmatter
+  const { frontmatter, html, timeToRead } = markdownRemark
+  const { coverCredits, tags, title, slug, excerpt } = frontmatter
 
   return (
     <>
@@ -22,7 +22,16 @@ const BlogPost = ({ data: { markdownRemark } }) => {
       <Layout>
         <SEO title={title} />
         <S.PostTitleWrapper>
+          <span />
           <S.PostTitle>{title}</S.PostTitle>
+          <S.PostTagsAndTime>
+            <S.Tags>
+              {tags.map((tag) => (
+                <S.Tag key={tag}>#{tag}</S.Tag>
+              ))}
+            </S.Tags>{' '}
+            - {getTimeToRead(timeToRead)}
+          </S.PostTagsAndTime>
         </S.PostTitleWrapper>
         <S.PostView>
           <S.PostExcerpt dangerouslySetInnerHTML={{ __html: excerpt }} />

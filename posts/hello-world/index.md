@@ -11,19 +11,30 @@ coverCredits: {
 }
 ---
 
-# Game On
+## Game On
 
 Como já deve ter percebido, meu nome é Emerson Paiva, hoje (23/06) estou completando 25 anos (parabéns pra mim🎉) e após um bom tempo deixando esse projeto de lado, escolhi como presente de aniversário dar o ponta pé inicial nesse blog (agora vai).
 
-# Meus Planos
+## Por que criar esse blog?
+
+Desde que eu comecei a minha jornada como desenvolvedor, lá no estágio, eu já queria compartilhar um pouco da minha carreira e do que eu venho aprendendo, cheguei a fazer um post no [Medium](https://medium.com/@emersonpaiva/e-acabou-o-melhor-ano-da-minha-vida-at%C3%A9-agora-bb37811d6c89) e deixei alguns rascunhos mofando por lá.
+
+Eu poderia continuar utilizando o Medium ou melhor ainda, o [dev.to](https://dev.to/), mas o que eu estou buscando vai um pouco além de compartilhar conteúdo e eu quero uma plataforma 100% customizável, se eu quiser colocar um macaco.
+
+Tive um pouco de trabalho, principalmente na criação do layout, mesmo que incompleto, mas se você chegou até aqui, então já valeu a pena 💜.
+
+
+## Meus Planos
 
 Tenho trabalhado em algumas ideias para esse blog, mas o que eu posso te garantir é que logo teremos ~~várias~~ postagens relacionadas ao desenvolvimento **Front End** e bastante React.js.
 
 ![Plans](https://media.giphy.com/media/26ufhYjBs6C4Q5SJG/giphy.gif)
 *[South Park](https://pt.wikipedia.org/wiki/South_Park)*
 
-Tenho algumas anotações no meu [Notion](https://www.notion.so/) sobre conteúdos relacionados ao mundo _front end_. Meu objetivo primário é compartilhar conteúdo de tecnológia, porém, nos meus planos estão conteúdos mais pessoas (prometo deixar isso em uma seção totalmente separada, para não desviar nosso foco aqui), como recomendações de músicas, filmes etc., então não se espante se acabar encontrando uma citação a filmes como _(500) Days of Summer_.
+Tenho algumas anotações no meu [Notion](https://www.notion.so/) sobre conteúdos relacionados ao mundo _front end_. Meu objetivo primário é compartilhar conteúdo de tecnológia, porém, nos meus planos estão conteúdos mais pessoas (prometo deixar isso em uma seção totalmente separada, para não desviar nosso foco aqui), como recomendações de músicas, filmes etc., então não se espante se acabar encontrando uma citação a filmes como [(500) Days of Summer](https://pt.wikipedia.org/wiki/(500)_Days_of_Summer).
 
 Então, escolha um assento e vamos embarcar nessa jornada comigo. 🙂
 
 Obrigado por chegar até aqui!
+
+Ah! Todo conteúdo aqui é [open source](https://pt.wikipedia.org/wiki/C%C3%B3digo_aberto), então, se encontrar alguma coisa errada, eu vou adorar receber o teu pull request lá no [github](https://github.com/oemersonpaiva/emersonpaiva.dev) 💜.
