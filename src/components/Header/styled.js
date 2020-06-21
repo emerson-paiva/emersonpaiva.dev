@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
-import media from "styled-media-query";
+import media from 'styled-media-query'
 
 export const Header = styled.header`
   background-color: var(--color-background);
@@ -13,10 +13,10 @@ export const Header = styled.header`
   width: 100%;
   z-index: 50;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan('medium')`
     padding: 1.2rem 2rem;
   `}
- `
+`
 
 export const Container = styled.div`
   display: flex;
@@ -35,7 +35,7 @@ export const Name = styled.h1`
   color: var(--color-white-100);
   font-size: 2.2rem;
   font-weight: normal;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 
   &:hover {
     color: var(--color-primary);
