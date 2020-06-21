@@ -18,7 +18,11 @@ const BlogPost = ({ data: { markdownRemark } }) => {
         </a>
       </S.CoverCredit>
       <Layout>
-        <SEO title={frontmatter.title} />
+        <SEO
+          title={frontmatter.title}
+          description={frontmatter.excerpt}
+          lang="pt-br"
+        />
         <S.PostTitleWrapper>
           <S.PostTitle>{frontmatter.title}</S.PostTitle>
         </S.PostTitleWrapper>
