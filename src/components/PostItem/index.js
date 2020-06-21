@@ -2,7 +2,7 @@ import React from 'react'
 
 import * as S from './styled'
 
-const getTimeToRead = time => `${time} min de leitura`
+export const getTimeToRead = (time) => `${time} min de leitura`
 
 const RenderCover = (cover, alt) => (
   <S.CoverWrapper>
@@ -28,7 +28,7 @@ const PostItem = ({ post }) => {
           <S.Title>{title}</S.Title>
         </S.PostLink>
         <S.PostTags>
-          {tags?.map(tag => (
+          {tags?.map((tag) => (
             <S.PostLabel key={tag}>#{tag}</S.PostLabel>
           ))}
         </S.PostTags>

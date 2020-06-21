@@ -82,11 +82,13 @@ export const PostTitleWrapper = styled.div`
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
   max-width: 86rem;
   margin-top: 7.2rem;
   width: 100%;
+  padding-bottom: 1rem;
 
   ${media.lessThan('medium')`
     position: relative;
@@ -98,6 +100,23 @@ export const PostTitleWrapper = styled.div`
     height: auto;
     padding: 3rem 5rem;
   `}
+`
+
+export const PostTagsAndTime = styled.div`
+  align-self: flex-end;
+  color: var(--color-white-100);
+  font-size: 1.8rem;
+`
+
+export const Tags = styled.div`
+  display: inline-block;
+`
+
+export const Tag = styled.span`
+  background-color: var(--color-background);
+  border-radius: 0.8rem;
+  color: var(--color-text);
+  padding: 0.3rem 0.5rem;
 `
 
 export const PostExcerpt = styled.div`
@@ -137,7 +156,7 @@ export const PostContent = styled.article`
   }
 
   p {
-    margin: 0 auto 1.6rem;
+    margin: 0 auto 2rem;
   }
 
   h1,
@@ -223,23 +242,23 @@ export const PostContent = styled.article`
   }
 
   h1 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
   }
 
   h2 {
-    font-size: 2.1rem;
+    font-size: 2.6rem;
   }
 
   h3 {
-    font-size: 1.6rem;
+    font-size: 2rem;
   }
 
   h4 {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 
   h5 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   strong {
