@@ -14,7 +14,7 @@ const BlogPost = ({ data: { markdownRemark } }) => {
     <>
       <S.Cover fluid={frontmatter.thumbnail.childImageSharp.fluid} />
       <S.CoverCredit>
-        Créditos:{' '}
+        Capa:{' '}
         <a href={coverCredits.link} target="_blank">
           {coverCredits.name}
         </a>
