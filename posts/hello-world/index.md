@@ -26,9 +26,7 @@ Tive um pouco de trabalho, principalmente na criação do layout, mesmo que inco
 
 ## Meus Planos
 
-Tenho algumas ideias para esse blog, mas o que eu posso te garantir é que logo teremos várias postagens relacionadas ao desenvolvimento **Front End** e bastante React.js.
-
-Já tenho algumas anotações no meu [Notion](https://www.notion.so/) e ideias para compartilhar, então em breve teremos conteúdo por aqui.
+Já tenho algumas anotações no meu [Notion](https://www.notion.so/) e ideias para compartilhar aqui, em alguns dias teremos algumas postagens relacionadas ao desenvolvimento **Front End** e bastante React.js.
 
 ![Plans](https://media.giphy.com/media/26ufhYjBs6C4Q5SJG/giphy.gif)
 *[South Park](https://pt.wikipedia.org/wiki/South_Park)*
