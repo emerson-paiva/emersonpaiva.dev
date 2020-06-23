@@ -17,7 +17,10 @@ Como já deve ter percebido, meu nome é Emerson Paiva, hoje (23/06) estou compl
 
 ## Por que criar esse blog?
 
-Desde que eu comecei a minha jornada como desenvolvedor, lá no estágio, eu já queria compartilhar um pouco da minha carreira e do que eu venho aprendendo, cheguei a fazer um post no [Medium](https://medium.com/@emersonpaiva/e-acabou-o-melhor-ano-da-minha-vida-at%C3%A9-agora-bb37811d6c89) e deixei alguns rascunhos mofando por lá. Agora estou decidido a isso fazer acontecer!
+Eu acredito quando dizem que você aprende muito tentando ajudar outros, e desde que eu comecei a minha jornada como desenvolvedor, lá no estágio, eu já queria compartilhar um pouco da minha carreira e do que eu venho aprendendo, cheguei a fazer um post no [Medium](https://medium.com/@emersonpaiva/e-acabou-o-melhor-ano-da-minha-vida-at%C3%A9-agora-bb37811d6c89) e deixei alguns rascunhos mofando por lá. Agora estou decidido a isso fazer acontecer!
+
+![Kent C. Dodds](./kent-dodds.png)
+*[Kent C. Dodds](https://twitter.com/kentcdodds/status/1275166873689001984)*
 
 Eu poderia continuar utilizando o Medium ou melhor ainda, o [dev.to](https://dev.to/), mas o que eu estou buscando vai um pouco além de compartilhar conteúdo e eu quero uma plataforma 100% customizável, onde eu sou o todo poderoso.
 

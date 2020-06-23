@@ -193,6 +193,7 @@ export const PostContent = styled.article`
     }
   }
 
+  .gatsby-resp-image-wrapper,
   img {
     display: block;
     max-width: 100%;
