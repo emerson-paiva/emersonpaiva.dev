@@ -25,7 +25,7 @@ const BioResume = () => {
       <S.Title>
         Olá,
         <br />
-        Eu sou <span>{title}</span>
+        Sou o <span>{title}</span>
       </S.Title>
       <S.JobTitle>{jobTitle}</S.JobTitle>
       <S.Description>{description}</S.Description>
