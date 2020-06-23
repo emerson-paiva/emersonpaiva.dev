@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
-import media from "styled-media-query";
+import media from 'styled-media-query'
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
   :root {
     --color-primary: #794BC4;
     --color-background: #15202B;
+    --color-text: #f3f3f3;
     --color-white-100: #f3f3f3;
     --color-white-200: #d0d0d0;
 
@@ -24,7 +25,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-size: 62.5%;
 
-    ${media.lessThan("small")`
+    ${media.lessThan('small')`
       font-size: 55%;
     `}
   }

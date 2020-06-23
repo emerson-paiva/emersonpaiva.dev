@@ -1,14 +1,12 @@
 import React from 'react'
 import { LightBulb } from '@styled-icons/heroicons-solid/LightBulb'
 import { Link } from 'gatsby'
-
+import Avatar from 'components/Avatar'
 import * as S from './styled'
 
-import avatar from 'images/avatar.jpg'
-
-const Avatar = () => (
+const UserAvatar = () => (
   <S.Wrapper>
-    <S.Avatar src={avatar} alt="Avatar" />
+    <Avatar />
     <Link to="/">
       <S.Name>emerson</S.Name>
     </Link>
@@ -18,13 +16,14 @@ const Avatar = () => (
 const Header = () => (
   <S.Header>
     <S.Container>
-      <Avatar />
+      <UserAvatar />
       <S.Wrapper>
         <S.Navbar>
-          <S.NavItem to="/about">hi</S.NavItem>
+          {/* TODO add who I'm page */}
+          <S.NavItem to="/">hi</S.NavItem>
           <S.NavItem to="/blog">blog</S.NavItem>
         </S.Navbar>
-          {/* TODO add toggle dark mode */}
+        {/* TODO add toggle dark mode */}
         {/* <S.BtnModeChange>
           <LightBulb />
         </S.BtnModeChange> */}
