@@ -266,6 +266,7 @@ export const PostContent = styled.article`
     font-weight: 700;
   }
 
+  .gatsby-resp-image-image,
   .gatsby-resp-image-background-image {
     z-index: 2;
     opacity: 1 !important;
