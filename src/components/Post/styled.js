@@ -14,7 +14,7 @@ export const Cover = styled(Img)`
       rgba(0, 0, 0, 0.65) 50%,
       rgba(121, 75, 196, 0.65) 90%
     );
-    opacity: 0.6;
+    opacity: 0.8;
     content: '';
     position: absolute;
     top: 0;
@@ -69,6 +69,8 @@ export const PostTitle = styled.h1`
   color: var(--color-white-100);
   font-size: var(--title);
   line-height: 1.4;
+  text-shadow: 0.1rem 0.2rem 3rem;
+  text-align: center;
 
   ${media.lessThan('medium')`
     font-size: var(--mobile-title);
@@ -117,6 +119,10 @@ export const Tag = styled.span`
   border-radius: 0.8rem;
   color: var(--color-text);
   padding: 0.3rem 0.5rem;
+
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 `
 
 export const PostExcerpt = styled.div`
