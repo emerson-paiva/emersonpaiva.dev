@@ -13,6 +13,6 @@ coverCredits: {
 
 <!-- TODO make section catch less attention from the user -->
 ### O que estou ouvindo?
-Enquanto escrevo essa postagem estou ouvindo uma playlist chamada _[Songs to Sing in the Car](https://open.spotify.com/playlist/37i9dQZF1DWWMOmoXKqHTD?si=XnUMpT22SGeyTgzxT7rF3A)_ no Spotify. É uma mistura de genêros com muito indie, pop e alguns rocks clássicos.
+Enquanto escrevo essa postagem estou ouvindo a playlist _[Songs to Sing in the Car](https://open.spotify.com/playlist/37i9dQZF1DWWMOmoXKqHTD?si=XnUMpT22SGeyTgzxT7rF3A)_ no Spotify. É uma mistura de genêros com muito indie, pop e alguns rocks clássicos.
 
 ## Introdução
