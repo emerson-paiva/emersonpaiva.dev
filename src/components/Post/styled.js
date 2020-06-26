@@ -132,8 +132,7 @@ export const PostExcerpt = styled.div`
   line-height: 1.7;
 
   display: flex;
-  align-items: center;
-  padding-bottom: 5rem;
+  align-items: flex-start;
 
   ${media.lessThan('medium')`
     padding-bottom: 2rem;
