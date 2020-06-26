@@ -10,6 +10,7 @@ const Footer = () => (
         href="https://github.com/emerpaiva/emersonpaiva.dev/blob/master/LICENSE"
         title="Termos de Uso"
         target="_blank"
+        rel="noreferrer"
       >
         Termos de Uso
       </S.Link>
