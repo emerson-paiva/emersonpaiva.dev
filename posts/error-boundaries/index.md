@@ -4,7 +4,7 @@ date: '2020-06-30'
 thumbnail: './cover.jpg'
 tags: ['react.js', 'pensandoNoUsuario']
 slug: 'criando-uma-tela-de-erro-generica-error-boundaries-no-react'
-excerpt: 'Existe um universo em que nossas aplicações sempre funcionam como esperado e o usuário nunca se depara com uma tela com textos vermelhos¹ e que na maioria não tem significado algum para ele, mas esse não é o caso desse universo em que estamos.'
+excerpt: 'Existe um universo em que nossas aplicações sempre funcionam como esperado e o usuário nunca se depara com uma tela com textos vermelhos¹, mas esse não é o caso do universo em que vivemos.'
 coverCredits: {
   link: "https://unsplash.com/photos/k_pBB5wJtaU",
   name: "Unsplash"
