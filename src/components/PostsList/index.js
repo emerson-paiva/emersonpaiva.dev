@@ -26,7 +26,7 @@ const postsQuery = graphql`
         frontmatter {
           thumbnail {
             childImageSharp {
-              fluid(maxWidth: 700, quality: 100) {
+              fluid(maxWidth: 660, quality: 75) {
                 ...GatsbyImageSharpFluid
               }
             }
@@ -38,12 +38,14 @@ const postsQuery = graphql`
 `
 
 const PostsList = () => {
-  const { posts: {nodes: posts} } = useStaticQuery(postsQuery)
+  const {
+    posts: { nodes: posts },
+  } = useStaticQuery(postsQuery)
 
   return (
     <>
       <S.PostsWrapper>
-        {posts?.map(post => (
+        {posts?.map((post) => (
           <PostItem key={post.fields.slug} post={post} />
         ))}
       </S.PostsWrapper>
