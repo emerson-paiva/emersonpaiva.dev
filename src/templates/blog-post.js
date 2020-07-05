@@ -19,6 +19,7 @@ const BlogPost = ({ data: { markdownRemark } }) => {
           {coverCredits.name}
         </a>
       </S.CoverCredit>
+      {/* <S.PostExcerpt dangerouslySetInnerHTML={{ __html: excerpt }} /> */}
       <Layout>
         <SEO
           title={frontmatter.title}
@@ -33,11 +34,12 @@ const BlogPost = ({ data: { markdownRemark } }) => {
               {tags.map((tag) => (
                 <S.Tag key={tag}>#{tag}</S.Tag>
               ))}
-            </S.Tags>{' '}
-            - {getTimeToRead(timeToRead)}
+            </S.Tags>
           </S.PostTagsAndTime>
         </S.PostTitleWrapper>
         <S.PostView>
+          {/* TODO add timeToRead style */}
+          {/* {getTimeToRead(timeToRead)} */}
           <S.PostExcerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
           <S.PostContent dangerouslySetInnerHTML={{ __html: html }} />
           <Comments title={title} slug={slug} />
@@ -64,7 +66,7 @@ export const query = graphql`
         date(formatString: "DD MMM, YYYY", locale: "pt-Br")
         thumbnail {
           childImageSharp {
-            fluid(maxWidth: 2560, quality: 100) {
+            fluid(maxWidth: 1920, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

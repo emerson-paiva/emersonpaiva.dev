@@ -18,6 +18,13 @@ const postsQuery = graphql`
 
   query {
     posts: allMarkdownRemark(
+      filter: {
+        fields: {
+          slug: {
+            ne: "criando-uma-tela-de-erro-generica-error-boundaries-no-react"
+          }
+        }
+      }
       limit: 3
       sort: { fields: frontmatter___date, order: DESC }
     ) {
@@ -38,12 +45,14 @@ const postsQuery = graphql`
 `
 
 const PostsList = () => {
-  const { posts: {nodes: posts} } = useStaticQuery(postsQuery)
+  const {
+    posts: { nodes: posts },
+  } = useStaticQuery(postsQuery)
 
   return (
     <>
       <S.PostsWrapper>
-        {posts?.map(post => (
+        {posts?.map((post) => (
           <PostItem key={post.fields.slug} post={post} />
         ))}
       </S.PostsWrapper>
