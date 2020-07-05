@@ -33,7 +33,7 @@ const postsQuery = graphql`
         frontmatter {
           thumbnail {
             childImageSharp {
-              fluid(maxWidth: 700, quality: 100) {
+              fluid(maxWidth: 660, quality: 75) {
                 ...GatsbyImageSharpFluid
               }
             }
