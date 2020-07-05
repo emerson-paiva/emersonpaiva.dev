@@ -18,6 +18,13 @@ const postsQuery = graphql`
 
   query {
     posts: allMarkdownRemark(
+      filter: {
+        fields: {
+          slug: {
+            ne: "criando-uma-tela-de-erro-generica-error-boundaries-no-react"
+          }
+        }
+      }
       limit: 3
       sort: { fields: frontmatter___date, order: DESC }
     ) {

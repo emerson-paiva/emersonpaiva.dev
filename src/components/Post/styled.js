@@ -14,7 +14,7 @@ export const Cover = styled(Img)`
       rgba(0, 0, 0, 0.65) 50%,
       rgba(121, 75, 196, 0.65) 90%
     );
-    opacity: 0.6;
+    opacity: 0.8;
     content: '';
     position: absolute;
     top: 0;
@@ -32,7 +32,7 @@ export const CoverCredit = styled.div`
   color: var(--color-white-200);
   font-size: 1.4rem;
   position: absolute;
-  top: 54rem;
+  top: 7.2rem;
   right: 1rem;
   opacity: 0.7;
   transition: all 0.3s linear;
@@ -49,14 +49,14 @@ export const CoverCredit = styled.div`
 
 export const PostView = styled.div`
   background: var(--color-background);
-  border-radius: 4rem;
+  /* border-radius: 4rem; */
   font-weight: 400;
   height: 100%;
   max-width: 86rem;
   margin: 0 auto;
-  padding: 5rem 7rem;
+  padding: 3rem 7rem 5rem;
   position: relative;
-  top: -20rem;
+  /* top: -20rem; */
   width: 100%;
 
   ${media.lessThan('medium')`
@@ -69,6 +69,9 @@ export const PostTitle = styled.h1`
   color: var(--color-white-100);
   font-size: var(--title);
   line-height: 1.4;
+  text-shadow: 0.1rem 0.2rem 3rem;
+  text-align: center;
+  width: 100%;
 
   ${media.lessThan('medium')`
     font-size: var(--mobile-title);
@@ -76,9 +79,9 @@ export const PostTitle = styled.h1`
 `
 
 export const PostTitleWrapper = styled.div`
-  height: 30rem;
+  height: 50rem;
   position: absolute;
-  top: 0;
+  top: 7.2rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -86,7 +89,6 @@ export const PostTitleWrapper = styled.div`
   align-items: flex-start;
   justify-content: space-between;
   max-width: 86rem;
-  margin-top: 7.2rem;
   width: 100%;
   padding-bottom: 1rem;
 
@@ -117,17 +119,17 @@ export const Tag = styled.span`
   border-radius: 0.8rem;
   color: var(--color-text);
   padding: 0.3rem 0.5rem;
+
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
 `
 
 export const PostExcerpt = styled.div`
   color: var(--color-white-200);
   font-size: 2rem;
-  min-height: 15rem;
   line-height: 1.7;
-
-  display: flex;
-  align-items: center;
-  padding-bottom: 5rem;
+  margin-bottom: 2rem;
 
   ${media.lessThan('medium')`
     padding-bottom: 2rem;
