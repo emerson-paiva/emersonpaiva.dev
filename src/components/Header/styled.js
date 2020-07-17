@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import media from 'styled-media-query'
+import { LightBulb } from '@styled-icons/heroicons-solid/LightBulb'
 
 export const Header = styled.header`
   background-color: var(--color-background);
@@ -79,15 +80,16 @@ export const NavItem = styled(Link)`
   }
 `
 
-export const BtnModeChange = styled.button`
+export const ButtonChangeTheme = styled.button`
   cursor: pointer;
   display: block;
   outline: none;
   height: 3rem;
   width: 3rem;
+`
 
-  & > svg {
-    fill: #434343;
-    width: 100%;
-  }
+export const Light = styled(LightBulb)`
+  fill: var(--color-lamp);
+  transition: fill 0.1s linear;
+  width: 100%;
 `

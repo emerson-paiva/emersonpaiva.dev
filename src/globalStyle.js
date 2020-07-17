@@ -14,6 +14,7 @@ const GlobalStyle = createGlobalStyle`
     --color-primary: #a670fe;
     --color-background: #15202B;
     --color-text: #f3f3f3;
+    --color-lamp: #fff48f;
     --color-white-100: #f3f3f3;
     --color-white-200: #d0d0d0;
 
@@ -54,6 +55,10 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  body.dark {
+    --color-lamp: #434343;
   }
 `
 
