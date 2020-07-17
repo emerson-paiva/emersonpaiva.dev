@@ -27,7 +27,7 @@ export const FindMeWrapper = styled.div`
 `
 
 export const Link = styled.a`
-  color: var(--color-white-100);
+  color: var(--color-text);
   cursor: pointer;
   display: block;
   height: 3rem;

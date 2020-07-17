@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 export const Post = styled.article`
   box-shadow: 0rem 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
   border-radius: 0.3rem;
-  color: var(--color-white-100);
+  color: var(--color-text);
   overflow: hidden;
   position: relative;
   transition: all 0.2s linear;
@@ -65,7 +65,7 @@ export const PostTags = styled.div`
 `
 
 export const PostLabel = styled.span`
-  color: var(--color-white-100);
+  color: var(--color-text);
   font-style: normal;
   font-size: 1.6rem;
   font-weight: 300;

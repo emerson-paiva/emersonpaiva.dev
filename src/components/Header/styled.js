@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import media from 'styled-media-query'
+import { LightBulb } from '@styled-icons/heroicons-solid/LightBulb'
 
 export const Header = styled.header`
   background-color: var(--color-background);
@@ -32,7 +33,7 @@ export const Wrapper = styled.div`
 `
 
 export const Name = styled.h1`
-  color: var(--color-white-100);
+  color: var(--color-text);
   font-size: 2.2rem;
   font-weight: normal;
   transition: all 0.2s linear;
@@ -61,7 +62,7 @@ export const Navbar = styled.nav`
 `
 
 export const NavItem = styled(Link)`
-  color: var(--color-white-100);
+  color: var(--color-text);
   font-size: 1.7rem;
   font-weight: 600;
   text-decoration: none;
@@ -72,22 +73,23 @@ export const NavItem = styled(Link)`
 
     &::after {
       content: '•';
-      color: var(--color-white-100);
+      color: var(--color-text);
       display: inline-block;
       margin: 0px 1rem;
     }
   }
 `
 
-export const BtnModeChange = styled.button`
+export const ButtonChangeTheme = styled.button`
   cursor: pointer;
   display: block;
   outline: none;
   height: 3rem;
   width: 3rem;
+`
 
-  & > svg {
-    fill: #434343;
-    width: 100%;
-  }
+export const Light = styled(LightBulb)`
+  fill: var(--color-lamp);
+  transition: fill 0.1s linear;
+  width: 100%;
 `
