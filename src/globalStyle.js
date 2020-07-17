@@ -12,11 +12,10 @@ const GlobalStyle = createGlobalStyle`
 
   :root {
     --color-primary: #a670fe;
-    --color-background: #15202B;
-    --color-text: #f3f3f3;
+    --color-background: #ffffff;
+    --color-text: #14171a;
+    --color-text-2: #404040;
     --color-lamp: #fff48f;
-    --color-white-100: #f3f3f3;
-    --color-white-200: #d0d0d0;
 
     --title: 4.8rem;
     --mobile-title: 3.6rem;
@@ -58,7 +57,15 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body.dark {
+    --color-primary: #a670fe;
+    --color-background: #15202B;
+    --color-text: #f3f3f3;
+    --color-text-2: #d0d0d0;
     --color-lamp: #434343;
+  }
+
+  body.loaded {
+    transition: background-color .2s linear;
   }
 `
 

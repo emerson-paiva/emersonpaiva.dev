@@ -29,7 +29,7 @@ export const Cover = styled(Img)`
 `
 
 export const CoverCredit = styled.div`
-  color: var(--color-white-200);
+  color: var(--color-text-2);
   font-size: 1.4rem;
   position: absolute;
   top: 7.2rem;
@@ -66,7 +66,7 @@ export const PostView = styled.div`
 `
 
 export const PostTitle = styled.h1`
-  color: var(--color-white-100);
+  color: var(--color-text);
   font-size: var(--title);
   line-height: 1.4;
   text-shadow: 0.1rem 0.2rem 3rem;
@@ -106,7 +106,7 @@ export const PostTitleWrapper = styled.div`
 
 export const PostTagsAndTime = styled.div`
   align-self: flex-end;
-  color: var(--color-white-100);
+  color: var(--color-text);
   font-size: 1.8rem;
 `
 
@@ -126,7 +126,7 @@ export const Tag = styled.span`
 `
 
 export const PostExcerpt = styled.div`
-  color: var(--color-white-200);
+  color: var(--color-text-2);
   font-size: 2rem;
   line-height: 1.7;
   margin-bottom: 2rem;
@@ -149,7 +149,7 @@ export const PostContent = styled.article`
   .tags,
   iframe,
   .button-post {
-    color: var(--color-white-100);
+    color: var(--color-text);
     font-size: 2rem;
     font-weight: 300;
     line-height: 1.7;
@@ -202,7 +202,7 @@ export const PostContent = styled.article`
     margin: 5rem auto 1rem;
 
     & + em {
-      color: var(--color-white-200);
+      color: var(--color-text-2);
       display: block;
       font-style: normal;
       font-size: 1.2rem;
@@ -217,7 +217,7 @@ export const PostContent = styled.article`
   }
 
   blockquote {
-    color: var(--color-white-100);
+    color: var(--color-text);
     border-left: 0.3rem solid var(--highlight);
     padding: 0 1.875rem;
     margin: 3.125rem auto;
@@ -303,7 +303,7 @@ export const PostContent = styled.article`
     transition: opacity 0.5s;
 
     svg {
-      color: var(--color-white-100);
+      color: var(--color-text);
     }
 
     &:hover {

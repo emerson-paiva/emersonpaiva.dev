@@ -33,7 +33,7 @@ export const Wrapper = styled.div`
 `
 
 export const Name = styled.h1`
-  color: var(--color-white-100);
+  color: var(--color-text);
   font-size: 2.2rem;
   font-weight: normal;
   transition: all 0.2s linear;
@@ -62,7 +62,7 @@ export const Navbar = styled.nav`
 `
 
 export const NavItem = styled(Link)`
-  color: var(--color-white-100);
+  color: var(--color-text);
   font-size: 1.7rem;
   font-weight: 600;
   text-decoration: none;
@@ -73,7 +73,7 @@ export const NavItem = styled(Link)`
 
     &::after {
       content: '•';
-      color: var(--color-white-100);
+      color: var(--color-text);
       display: inline-block;
       margin: 0px 1rem;
     }
