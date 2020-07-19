@@ -1,1 +1,1 @@
-"It's gonna be legen — wait for it...".
+"It's gonna be legen — wait for it..." - Stinson, Barney.
