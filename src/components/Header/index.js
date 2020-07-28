@@ -16,23 +16,23 @@ const UserAvatar = () => (
 
 const Header = () => {
   const [theme, setTheme] = useState()
-  const [lightOn, setLightOn] = useState()
-  const [lightOff, setLightOff] = useState()
+  const [onSwitchOn, setOnSwitchOn] = useState()
+  const [onSwitchOff, setOnSwitchOff] = useState()
 
   const toggleTheme = () => {
     if (theme === 'dark') {
-      lightOn.play()
+      onSwitchOn.play()
       setTheme('light')
     } else {
-      lightOff.play()
+      onSwitchOff.play()
       setTheme('dark')
     }
   }
 
   useEffect(() => {
     setTheme(window.__theme)
-    setLightOn(new Audio(switchOn))
-    setLightOff(new Audio(switchOff))
+    setOnSwitchOn(new Audio(switchOn))
+    setOnSwitchOff(new Audio(switchOff))
   }, [])
 
   useEffect(() => {

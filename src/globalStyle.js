@@ -11,12 +11,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   :root {
-    --color-primary: #a670fe;
-    --color-background: #ffffff;
-    --color-text: #14171a;
-    --color-text-2: #404040;
-    --color-lamp: #fff48f;
-
     --title: 4.8rem;
     --mobile-title: 3.6rem;
   }
@@ -36,13 +30,28 @@ const GlobalStyle = createGlobalStyle`
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+    &.dark {
+      --color-primary: #a670fe;
+      --color-background: #15202B;
+      --color-text: #f3f3f3;
+      --color-text-2: #d0d0d0;
+      --color-lamp: #434343;
+    }
+
+    &.light {
+      --color-primary: #a670fe;
+      --color-background: #ffffff;
+      --color-text: #14171a;
+      --color-text-2: #404040;
+      --color-lamp: #fff48f;
+    }
   }
 
   button {
     appearance: none;
     border: none;
     background: transparent;
-
     color: inherit;
     font: inherit;
     -webkit-font-smoothing: inherit;
@@ -54,18 +63,6 @@ const GlobalStyle = createGlobalStyle`
   a {
     color: inherit;
     text-decoration: none;
-  }
-
-  body.dark {
-    --color-primary: #a670fe;
-    --color-background: #15202B;
-    --color-text: #f3f3f3;
-    --color-text-2: #d0d0d0;
-    --color-lamp: #434343;
-  }
-
-  body.loaded {
-    transition: background-color .2s linear;
   }
 `
 
