@@ -37,6 +37,7 @@ const GlobalStyle = createGlobalStyle`
       --color-text: #f3f3f3;
       --color-text-2: #d0d0d0;
       --color-lamp: #434343;
+      --highlight: #a670fe;
     }
 
     &.light {
@@ -45,6 +46,7 @@ const GlobalStyle = createGlobalStyle`
       --color-text: #14171a;
       --color-text-2: #404040;
       --color-lamp: #fff48f;
+      --highlight: #a670fe;
     }
   }
 
