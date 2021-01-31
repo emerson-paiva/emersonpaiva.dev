@@ -12,11 +12,11 @@ const BlogPost = ({ data: { markdownRemark } }) => {
 
   return (
     <>
-      <S.Cover fluid={frontmatter.thumbnail.childImageSharp.fluid} />
+      <S.Cover fluid={frontmatter?.thumbnail?.childImageSharp?.fluid} />
       <S.CoverCredit>
         Capa:{' '}
-        <a href={coverCredits.link} target="_blank">
-          {coverCredits.name}
+        <a href={coverCredits?.link} target="_blank">
+          {coverCredits?.name}
         </a>
       </S.CoverCredit>
       {/* <S.PostExcerpt dangerouslySetInnerHTML={{ __html: excerpt }} /> */}
