@@ -62,3 +62,5 @@ Pra quem não sabe, esse é o meu filme preferido. ❤️
 3 - [Submarine - Original Songs From The Film By Alex Turner](https://open.spotify.com/album/3OqRGywivnQ0IeClUeUa4n?si=_5GBtnRTROyZyi_Regobow)
 \
 4 - [500 days of Summer (Expectations VS Reality)](https://www.youtube.com/watch?v=yj_48w1pfIk)
+\
+Extra: [**Playlist com algumas músicas citadas**](https://open.spotify.com/playlist/3TxOkOzxZuN0Ak2KnWZuZB?si=RH3kzXuwRMyMjyhDJ3mREA)
