@@ -978,10 +978,10 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.10.5", "@babel/runtime@^7.11.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
-  version "7.11.2"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
-  integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.3", "@babel/runtime@^7.10.5", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.5", "@babel/runtime@^7.3.4", "@babel/runtime@^7.5.5", "@babel/runtime@^7.7.2", "@babel/runtime@^7.8.4":
+  version "7.13.8"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.13.8.tgz#cc886a85c072df1de23670dc1aa59fc116c4017c"
+  integrity sha512-CwQljpw6qSayc0fRG1soxHAKs1CnQMOChm4mlQP6My0kf9upVGizj/KhlTTgyUnETmHpcUXjaluNAkteRFuafg==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -6881,12 +6881,12 @@ gatsby-plugin-sitemap@^2.4.13:
     pify "^3.0.0"
     sitemap "^1.13.0"
 
-gatsby-plugin-styled-components@^3.3.10:
-  version "3.3.10"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.3.10.tgz#d325535023695382cf0f209382e5e0cc4658e6e6"
-  integrity sha512-2yV3hanEPelf8IwkOa1Sk4RtHh4tuuvdJs2NCnAsHxYEMLlFC4UeG91z4Q4t69G7RvZ2W8PzdByLK5N5C97CQQ==
+gatsby-plugin-styled-components@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-3.10.0.tgz#beeafee695b1a42df6584ca5afcaa9b461eb29f5"
+  integrity sha512-CDNNvRxLS4dsQI2fv57T+0VUqapRtiDXm6SUsxyuVuEhJCyDGu1g9jg+9ty0HfUEDcW8JexlRJO5srkdYp1x1g==
   dependencies:
-    "@babel/runtime" "^7.10.3"
+    "@babel/runtime" "^7.12.5"
 
 gatsby-plugin-transition-link@^1.20.2:
   version "1.20.2"
