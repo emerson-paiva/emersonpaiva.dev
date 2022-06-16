@@ -5,8 +5,8 @@ module.exports = {
     description: `Seja muito bem vindo(a) ao meu blog! Aqui eu vou compartilhar um pouco do conhecimento adquirido na minha jornada como desenvolvedor Front End!`,
     author: `@astronauta_dev`,
     findMe: {
-      linkedin: 'oemersonpaiva',
-      github: 'oemersonpaiva',
+      linkedin: 'emerson-paiva',
+      github: 'emerson-paiva',
     },
     siteUrl: `https://emersonpaiva.dev`,
   },
