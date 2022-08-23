@@ -31,7 +31,7 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     background-color: var(--color-background);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-smooth: antialiased;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

@@ -7,10 +7,10 @@ import * as S from './styled'
 
 const UserAvatar = () => (
   <S.Wrapper>
-    <Avatar src="/static/avatar.jpg" />
+    {/* <Avatar src="/static/avatar.jpg" /> */}
     <Link href="/">
       <a>
-        <S.Name>emerson</S.Name>
+        <S.Name>Emerson Paiva</S.Name>
       </a>
     </Link>
   </S.Wrapper>
@@ -56,12 +56,12 @@ export const Header = () => {
         <S.Wrapper>
           <S.Navbar>
             {/* TODO add who I'm page */}
-            <S.NavItem href="/">
-              <a>hi</a>
-            </S.NavItem>
-            <S.NavItem href="/blog">
-              <a>blog</a>
-            </S.NavItem>
+            <Link href={'/'} passHref>
+              <S.NavItem>hi</S.NavItem>
+            </Link>
+            <Link href="/blog" passHref>
+              <S.NavItem>blog</S.NavItem>
+            </Link>
           </S.Navbar>
           <S.ButtonChangeTheme onClick={toggleTheme}>
             <S.Light />

@@ -15,6 +15,7 @@
     "react-dom": "18.2.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
+    "sharp": "^0.30.7",
     "styled-components": "^5.3.5",
     "styled-icons": "^10.45.0",
     "styled-media-query": "^2.1.2"

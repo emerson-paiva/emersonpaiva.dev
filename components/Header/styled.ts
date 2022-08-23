@@ -13,6 +13,8 @@ export const Header = styled.header`
   left: 0;
   width: 100%;
   z-index: 50;
+  display: flex;
+  align-items: center;
 
   ${media.lessThan('medium')`
     padding: 1.2rem 2rem;
@@ -25,6 +27,7 @@ export const Container = styled.div`
   align-items: center;
   max-width: 90rem;
   margin: 0 auto;
+  width: 100%;
 `
 
 export const Wrapper = styled.div`
@@ -61,7 +64,7 @@ export const Navbar = styled.nav`
   }
 `
 
-export const NavItem = styled(Link)`
+export const NavItem = styled.a`
   color: var(--color-text);
   font-size: 1.7rem;
   font-weight: 600;
