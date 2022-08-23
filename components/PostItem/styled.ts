@@ -28,8 +28,6 @@ export const CoverWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 250px;
 `
 
 export const Cover = styled.img`

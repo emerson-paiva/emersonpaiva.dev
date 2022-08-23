@@ -14,6 +14,7 @@ type Post = {
   date: string
   tags?: string[]
   thumbnail: string
+  timeToRead: number
 }
 
 type PostItemProps = {
@@ -22,8 +23,7 @@ type PostItemProps = {
 
 export const PostItem = ({ post }: PostItemProps) => {
   const { slug } = post
-  const { title, date, tags, thumbnail } = post
-  const timeToRead = getTimeToRead(0)
+  const { title, date, tags, thumbnail, timeToRead } = post
 
   return (
     <S.Post>
@@ -31,7 +31,7 @@ export const PostItem = ({ post }: PostItemProps) => {
       <S.PostDetails>
         <S.PostNotes>
           <S.PostLabel>{date}</S.PostLabel>
-          <S.PostLabel>{timeToRead}</S.PostLabel>
+          <S.PostLabel>{getTimeToRead(timeToRead)}</S.PostLabel>
         </S.PostNotes>
         <S.PostLink href={`/blog/${slug}`}>
           <a>

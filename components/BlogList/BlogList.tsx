@@ -7,6 +7,7 @@ export type Post = {
   slug: string
   thumbnail: string
   title: string
+  timeToRead: number
 }
 
 export type BlogListProps = {

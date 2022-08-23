@@ -2,10 +2,25 @@ import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
 
+const WORDS_PER_MINUTE = 225
+
 const postsDirectory = join(process.cwd(), 'posts')
+
+export const readingTime = (text: string) =>
+  Math.ceil(text.trim().split(/\s+/).length / WORDS_PER_MINUTE)
 
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory)
+}
+
+type Items = {
+  title?: string
+  slug?: string
+  date: string
+  thumbnail?: string
+  timeToRead?: number
+  content?: string
+  [key: string]: string | number | undefined
 }
 
 export function getPostBySlug(slug: string, fields: string[] = []) {
@@ -14,19 +29,20 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
-  type Items = {
-    [key: string]: string
-  }
-
-  const items: Items = {}
+  const items: Items = { date: '' }
 
   // Ensure only the minimal needed data is exposed
   fields.forEach((field) => {
     if (field === 'slug') {
       items[field] = realSlug
     }
+
     if (field === 'content') {
       items[field] = content
+    }
+
+    if (field === 'timeToRead') {
+      items[field] = readingTime(content)
     }
 
     if (typeof data[field] !== 'undefined') {
@@ -34,7 +50,7 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     }
   })
 
-  return items
+  return items as Items
 }
 
 export function getAllPosts(fields: string[] = []) {
