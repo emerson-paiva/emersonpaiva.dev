@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react'
 // import switchOn from '../../assets/audio/switch-on.mp3'
 // import switchOff from '../../assets/audio/switch-off.mp3'
-import * as S from './styled'
 import Link from 'next/link'
 import { Avatar } from 'components/Avatar'
+import * as S from './styled'
 
 const UserAvatar = () => (
   <S.Wrapper>
@@ -71,5 +71,3 @@ export const Header = () => {
     </S.Header>
   )
 }
-
-export default Header

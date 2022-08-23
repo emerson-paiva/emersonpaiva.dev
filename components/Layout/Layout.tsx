@@ -6,7 +6,7 @@ import * as S from './styled'
 // import '../../fonts.css'
 import { Footer } from 'components/Footer'
 import { FindMe } from 'components/FindMe'
-import Header from 'components/Header'
+import { Header } from 'components/Header'
 
 export const Layout = ({ children }: PropsWithChildren<{}>) => {
   // use next data api

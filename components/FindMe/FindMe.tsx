@@ -4,7 +4,7 @@ import type { StyledIcon } from '@styled-icons/styled-icon'
 
 import * as S from './styled'
 
-type SocialMedia = {
+export type SocialMedia = {
   url: string
   title: string
   Icon: StyledIcon
@@ -16,7 +16,7 @@ export const SocialMediaLink = ({ url, title, Icon }: SocialMedia) => (
   </S.Link>
 )
 
-type FindMeProps = {
+export type FindMeProps = {
   github: string
   linkedin: string
   twitter: string
