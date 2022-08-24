@@ -20,12 +20,13 @@ const BlogPost = ({ post }: BlogPostProps) => {
     return <span>Error</span>
   }
 
+  console.log({ post })
+
   return (
     <>
       <Head>
-        <title>{post.title} | Emerson Paiva</title>
+        <title>{`${post.title} | Emerson Paiva`}</title>
         <meta name="description" content={post.excerpt} />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       {/* <S.Cover src={post.thumbnail} /> */}
