@@ -20,8 +20,6 @@ const BlogPost = ({ post }: BlogPostProps) => {
     return <span>Error</span>
   }
 
-  console.log({ post })
-
   return (
     <>
       <Head>
