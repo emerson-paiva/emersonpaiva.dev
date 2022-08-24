@@ -49,14 +49,12 @@ export const CoverCredit = styled.div`
 
 export const PostView = styled.div`
   background: var(--color-background);
-  /* border-radius: 4rem; */
   font-weight: 400;
   height: 100%;
   max-width: 86rem;
   margin: 0 auto;
   padding: 3rem 7rem 5rem;
   position: relative;
-  /* top: -20rem; */
   width: 100%;
 
   ${media.lessThan('medium')`
@@ -79,11 +77,9 @@ export const PostTitle = styled.h1`
 `
 
 export const PostTitleWrapper = styled.div`
-  height: 50rem;
-  position: absolute;
+  height: 25rem;
   top: 7.2rem;
   left: 50%;
-  transform: translateX(-50%);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -91,6 +87,7 @@ export const PostTitleWrapper = styled.div`
   max-width: 86rem;
   width: 100%;
   padding-bottom: 1rem;
+  margin-top: 10rem;
 
   ${media.lessThan('medium')`
     position: relative;
