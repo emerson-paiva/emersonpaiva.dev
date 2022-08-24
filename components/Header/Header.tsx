@@ -1,8 +1,7 @@
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
 // import switchOn from '../../assets/audio/switch-on.mp3'
 // import switchOff from '../../assets/audio/switch-off.mp3'
 import Link from 'next/link'
-import { Avatar } from 'components/Avatar'
 import * as S from './styled'
 
 const UserAvatar = () => (
@@ -63,9 +62,9 @@ export const Header = () => {
               <S.NavItem>blog</S.NavItem>
             </Link>
           </S.Navbar>
-          <S.ButtonChangeTheme onClick={toggleTheme}>
+          {/* <S.ButtonChangeTheme onClick={toggleTheme}>
             <S.Light />
-          </S.ButtonChangeTheme>
+          </S.ButtonChangeTheme> */}
         </S.Wrapper>
       </S.Container>
     </S.Header>

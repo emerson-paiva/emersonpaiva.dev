@@ -1,4 +1,4 @@
-// import Image from 'next/image'
+import Image from 'next/image'
 import Link from 'next/link'
 import styled from 'styled-components'
 
@@ -30,7 +30,7 @@ export const CoverWrapper = styled.div`
   align-items: center;
 `
 
-export const Cover = styled.img`
+export const Cover = styled(Image)`
   width: 100%;
 `
 

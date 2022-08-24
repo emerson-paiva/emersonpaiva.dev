@@ -31,7 +31,7 @@ class CustomDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="pt-br">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
@@ -42,6 +42,10 @@ class CustomDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
+          />
+          <meta
+            name="description"
+            content="Emerson Paiva, desenvolvedor Front End & Cinéfilo"
           />
         </Head>
         <body>

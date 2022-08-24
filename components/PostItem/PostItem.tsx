@@ -4,7 +4,7 @@ export const getTimeToRead = (time: number) => `${time} min de leitura`
 
 const RenderCover = (cover: string, alt: string) => (
   <S.CoverWrapper>
-    <S.Cover src={cover} alt={alt} />
+    <S.Cover src={cover} alt={alt} width={720} height={280} objectFit="cover" />
   </S.CoverWrapper>
 )
 
