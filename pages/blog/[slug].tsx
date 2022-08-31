@@ -66,10 +66,12 @@ type Params = {
 }
 
 export async function getStaticProps({ params, locale }: Params) {
+  const formattedLocale = locale.split('-')[0]
+
   const post = getPostBySlug(
     params.slug,
     ['title', 'date', 'slug', 'content', 'thumbnail'],
-    locale
+    formattedLocale
   )
   const content = await markdownToHtml(post.content || '')
 

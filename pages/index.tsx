@@ -37,9 +37,11 @@ type GetStaticProps = {
 }
 
 export const getStaticProps = async ({ locale }: GetStaticProps) => {
+  const formattedLocale = locale.split('-')[0]
+
   const allPosts = getAllPosts(
     ['title', 'date', 'slug', 'thumbnail', 'timeToRead'],
-    [locale]
+    [formattedLocale]
   )
 
   return {
