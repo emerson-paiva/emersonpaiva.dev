@@ -32,14 +32,15 @@ const Home = ({ allPosts }: HomeProps & NextPage) => (
   </>
 )
 
-export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'thumbnail',
-    'timeToRead',
-  ])
+type GetStaticProps = {
+  locale: string
+}
+
+export const getStaticProps = async ({ locale }: GetStaticProps) => {
+  const allPosts = getAllPosts(
+    ['title', 'date', 'slug', 'thumbnail', 'timeToRead'],
+    [locale]
+  )
 
   return {
     props: { allPosts },

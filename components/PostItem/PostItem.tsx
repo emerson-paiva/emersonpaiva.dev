@@ -4,7 +4,7 @@ export const getTimeToRead = (time: number) => `${time} min de leitura`
 
 const RenderCover = (cover: string, alt: string) => (
   <S.CoverWrapper>
-    <S.Cover src={cover} alt={alt} width={720} height={280} objectFit="cover" />
+    <S.Cover src={cover} alt={alt} width={760} height={280} objectFit="cover" />
   </S.CoverWrapper>
 )
 
@@ -27,6 +27,8 @@ export const PostItem = ({ post }: PostItemProps) => {
 
   return (
     <S.Post>
+      {/* <Link href={`/blog/${slug}`}>
+        <a> */}
       {thumbnail && RenderCover(thumbnail, title)}
       <S.PostDetails>
         <S.PostNotes>
@@ -44,6 +46,8 @@ export const PostItem = ({ post }: PostItemProps) => {
           ))}
         </S.PostTags>
       </S.PostDetails>
+      {/* </a>
+      </Link> */}
     </S.Post>
   )
 }
