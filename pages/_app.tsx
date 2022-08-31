@@ -9,10 +9,9 @@ import GlobalStyle from 'styles/global'
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
+  const handleRouteChange = (url: string) => gtag.pageview(url)
+
   useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      gtag.pageview(url)
-    }
     router.events.on('routeChangeComplete', handleRouteChange)
 
     return () => {

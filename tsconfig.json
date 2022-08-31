@@ -20,7 +20,8 @@
       "lib/*": ["lib/*"],
       "pages/*": ["pages/*"],
       "posts/*": ["posts/*"],
-      "styles/*": ["styles/*"]
+      "styles/*": ["styles/*"],
+      "configs/*": ["configs/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

@@ -10,6 +10,10 @@ const nextConfig = {
       unoptimized: true,
     },
   },
+  i18n: {
+    locales: ['pt', 'en'],
+    defaultLocale: 'pt',
+  },
 }
 
 module.exports = nextConfig

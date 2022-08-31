@@ -62,27 +62,30 @@ type Params = {
   params: {
     slug: string
   }
+  locale: string
 }
 
-export async function getStaticProps({ params }: Params) {
-  const post = getPostBySlug(params.slug, [
-    'title',
-    'date',
-    'slug',
-    'content',
-    'thumbnail',
-  ])
+export async function getStaticProps({ params, locale }: Params) {
+  const post = getPostBySlug(
+    params.slug,
+    ['title', 'date', 'slug', 'content', 'thumbnail'],
+    locale
+  )
   const content = await markdownToHtml(post.content || '')
 
   return { props: { post: { ...post, content } } }
 }
 
-export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
+type GetStaticPaths = {
+  locales: string[]
+}
+
+export async function getStaticPaths({ locales }: GetStaticPaths) {
+  const posts = getAllPosts(['slug'], locales)
 
   return {
-    paths: posts.map(({ slug }) => ({ params: { slug } })),
-    fallback: false,
+    paths: posts.map(({ slug, locale }) => ({ params: { slug, locale } })),
+    fallback: true,
   }
 }
 
