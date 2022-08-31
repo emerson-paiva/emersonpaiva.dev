@@ -85,7 +85,7 @@ export async function getStaticPaths({ locales }: GetStaticPaths) {
 
   return {
     paths: posts.map(({ slug, locale }) => ({ params: { slug, locale } })),
-    fallback: false,
+    fallback: true,
   }
 }
 
