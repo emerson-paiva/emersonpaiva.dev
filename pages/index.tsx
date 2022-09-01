@@ -3,6 +3,7 @@ import { BlogList } from 'components/BlogList'
 import { HomePage } from 'components/Pages/HomePage'
 import { getAllPosts } from 'lib/api'
 import type { NextPage } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
 
 type Posts = {
@@ -45,7 +46,10 @@ export const getStaticProps = async ({ locale }: GetStaticProps) => {
   )
 
   return {
-    props: { allPosts },
+    props: {
+      allPosts,
+      ...(await serverSideTranslations(locale, ['bio'])),
+    },
   }
 }
 
