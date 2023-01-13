@@ -24,3 +24,11 @@ export const getPosts = () => {
 
   return posts;
 };
+
+export const getPostBySlug = (slug: string) => {
+  const file = `${POSTS_FOLDER_NAME}/${slug}.md`;
+  const content = fs.readFileSync(file, 'utf8');
+  const matterResult = matter(content);
+
+  return matterResult;
+};
