@@ -24,6 +24,6 @@ export const Description = styled.p`
 export const BioWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: calc(20%) 0;
+  padding: calc(15%) 0;
   width: 100%;
 `
