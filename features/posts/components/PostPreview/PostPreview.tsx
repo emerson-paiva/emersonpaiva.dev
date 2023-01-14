@@ -1,3 +1,5 @@
 export const PostPreview = () => {
-  return <div>PostPreview</div>;
+  return (
+    <div className='text-center text-green-100 font-bold'>PostPreview</div>
+  );
 };

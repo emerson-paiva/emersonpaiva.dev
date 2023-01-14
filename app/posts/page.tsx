@@ -1,5 +1,5 @@
+import { getPosts } from '@features/posts/services/Posts';
 import Link from 'next/link';
-import { getPosts } from '../../features/posts/services/Posts';
 
 const PostsPage = () => {
   const posts = getPosts();
