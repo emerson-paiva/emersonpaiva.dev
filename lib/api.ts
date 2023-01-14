@@ -10,7 +10,7 @@ const postsDirectory = join(process.cwd(), 'posts')
 export const readingTime = (text: string) =>
   Math.ceil(text.trim().split(/\s+/).length / WORDS_PER_MINUTE)
 
-export function getPostSlugs(locale: string) {
+export function getPostSlugs(locale: string = DEFAULT_LOCALE) {
   return fs.readdirSync(`${postsDirectory}/${locale}`)
 }
 
@@ -61,13 +61,13 @@ export function getPostBySlug(
 export function getAllPosts(fields: string[] = [], locales = [DEFAULT_LOCALE]) {
   let posts: Items[] = []
 
-  locales.forEach((locale) => {
-    const slugs = getPostSlugs(locale)
-    const postsBySlug = slugs
-      .map((slug) => getPostBySlug(slug, fields, locale))
-      .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
-    posts = [...posts, ...postsBySlug]
-  })
+  // locales.forEach((locale) => {
+  const slugs = getPostSlugs()
+  const postsBySlug = slugs
+    .map((slug) => getPostBySlug(slug, fields))
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+  posts = [...posts, ...postsBySlug]
+  // })
 
   return posts
 }

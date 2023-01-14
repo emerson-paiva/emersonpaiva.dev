@@ -4,6 +4,7 @@ import { HomePage } from 'components/Pages/HomePage'
 import { getAllPosts } from 'lib/api'
 import type { NextPage } from 'next'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { DEFAULT_LOCALE } from 'configs/constants'
 import Head from 'next/head'
 
 type Posts = {
@@ -37,7 +38,9 @@ type GetStaticProps = {
   locale: string
 }
 
-export const getStaticProps = async ({ locale }: GetStaticProps) => {
+export const getStaticProps = async ({
+  locale = DEFAULT_LOCALE,
+}: GetStaticProps) => {
   const formattedLocale = locale.split('-')[0]
 
   const allPosts = getAllPosts(

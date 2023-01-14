@@ -3,6 +3,7 @@ import markdownToHtml from 'lib/markdownToHtml'
 import Head from 'next/head'
 
 import * as S from 'components/Post'
+import { DEFAULT_LOCALE } from 'configs/constants'
 
 type BlogPostProps = {
   post: {
@@ -65,7 +66,10 @@ type Params = {
   locale: string
 }
 
-export async function getStaticProps({ params, locale }: Params) {
+export async function getStaticProps({
+  params,
+  locale = DEFAULT_LOCALE,
+}: Params) {
   const formattedLocale = locale.split('-')[0]
 
   const post = getPostBySlug(
