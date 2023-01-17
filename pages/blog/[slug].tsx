@@ -66,7 +66,20 @@ const BlogPost = ({
         <S.PostExcerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
         {/* <S.PostContent dangerouslySetInnerHTML={{ __html: content }} /> */}
         <S.PostContent>
-          <ReactMarkdown remarkPlugins={[remarkSlug, remarkHeadings]}>
+          <ReactMarkdown
+            remarkPlugins={[
+              remarkSlug,
+              [
+                remarkHeadings,
+                {
+                  behavior: 'wrap',
+                  linkProperties: {
+                    className: 'anchor',
+                  },
+                },
+              ],
+            ]}
+          >
             {markdown}
           </ReactMarkdown>
         </S.PostContent>

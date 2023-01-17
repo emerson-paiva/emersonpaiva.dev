@@ -8,7 +8,7 @@ excerpt: 'Generate UUID Without Lib in JavaScript using Web Crypto API from nati
 
 ## Web Crypto API
 
-If your website is hosted in a web security envirment (**https**), you could use the Web Crypto API to generate random uuid in a very simple way:
+If your website is hosted in a web security environment (**https**), you could use the Web Crypto API to generate random uuid in a very simple way:
 
 ```jsx
 const uuid = crypto.randomUUID()
