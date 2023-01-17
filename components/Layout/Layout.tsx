@@ -33,7 +33,7 @@ export const Layout = ({ children }: PropsWithChildren<{}>) => {
       <Header />
       <FindMe github="emerson-paiva" linkedin="emerson-paiva" twitter="" />
       <S.Main>{children}</S.Main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }

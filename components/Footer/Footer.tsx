@@ -5,7 +5,7 @@ export const Footer = () => (
     <S.Span>
       ©{new Date().getFullYear()} emersonpaiva.dev
       <S.Link
-        href="https://github.com/emerpaiva/emersonpaiva.dev/blob/master/LICENSE"
+        href="https://github.com/emerpaiva/emersonpaiva.dev/blob/main/LICENSE"
         title="Termos de Uso"
         target="_blank"
         rel="noreferrer"
