@@ -13,7 +13,7 @@ export const BioResume = () => {
         <Trans i18nKey={'bio:hello'} components={{ span: <span /> }} />
       </S.Title>
       <S.JobTitle>{t('job-title')}</S.JobTitle>
-      <S.Description>{t('description')}</S.Description>
+      {/* <S.Description>{t('description')}</S.Description> */}
     </S.BioWrapper>
   )
 }

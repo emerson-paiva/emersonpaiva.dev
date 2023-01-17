@@ -1,34 +1,46 @@
 import { getAllPosts, getPostBySlug } from 'lib/api'
-import markdownToHtml from 'lib/markdownToHtml'
 import Head from 'next/head'
-
-import * as S from 'components/Post'
+import Prism from 'prismjs'
 import { DEFAULT_LOCALE } from 'configs/constants'
+import { useEffect } from 'react'
+
+import ReactMarkdown from 'react-markdown'
+import remarkHeadings from 'remark-autolink-headings'
+import remarkSlug from 'remark-slug'
+import * as S from 'components/Post'
+
+require('prismjs/components/prism-javascript')
+require('prismjs/components/prism-css')
+require('prismjs/components/prism-jsx')
 
 type BlogPostProps = {
   post: {
-    title: string
-    thumbnail: string
-    slug: string
-    content: string
-    excerpt: string
-    tags: string[]
+    title?: string
+    thumbnail?: string
+    slug?: string
+    content?: string
+    excerpt?: string
+    tags?: string[]
   }
+  markdown: string
 }
 
-const BlogPost = ({ post }: BlogPostProps) => {
-  if (!post?.slug) {
-    return <span>Error</span>
-  }
+const BlogPost = ({
+  post: { title = '', slug = '', excerpt = '', tags = [] } = {},
+  markdown = '',
+}: BlogPostProps) => {
+  useEffect(() => {
+    Prism.highlightAll()
+  }, [slug])
 
   return (
     <>
       <Head>
-        <title>{`${post.title} | Emerson Paiva`}</title>
-        <meta name="description" content={post.excerpt} />
+        <title>{`${title} | Emerson Paiva`}</title>
+        <meta name="description" content={excerpt} />
       </Head>
 
-      {/* <S.Cover src={post.thumbnail} /> */}
+      {/* <S.Cover src={thumbnail} /> */}
       {/* <S.CoverCredit>
         Capa:{' '}
         <a href={coverCredits?.link} target="_blank">
@@ -39,10 +51,10 @@ const BlogPost = ({ post }: BlogPostProps) => {
 
       <S.PostTitleWrapper>
         <span />
-        <S.PostTitle>{post.title}</S.PostTitle>
+        <S.PostTitle>{title}</S.PostTitle>
         <S.PostTagsAndTime>
           <S.Tags>
-            {post.tags?.map((tag) => (
+            {tags?.map((tag) => (
               <S.Tag key={tag}>#{tag}</S.Tag>
             ))}
           </S.Tags>
@@ -51,8 +63,13 @@ const BlogPost = ({ post }: BlogPostProps) => {
       <S.PostView>
         {/* TODO add timeToRead style */}
         {/* {getTimeToRead(timeToRead)} */}
-        <S.PostExcerpt dangerouslySetInnerHTML={{ __html: post.excerpt }} />
-        <S.PostContent dangerouslySetInnerHTML={{ __html: post.content }} />
+        <S.PostExcerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
+        {/* <S.PostContent dangerouslySetInnerHTML={{ __html: content }} /> */}
+        <S.PostContent>
+          <ReactMarkdown remarkPlugins={[remarkSlug, remarkHeadings]}>
+            {markdown}
+          </ReactMarkdown>
+        </S.PostContent>
         {/* <Comments title={title} slug={slug} /> */}
       </S.PostView>
     </>
@@ -77,9 +94,9 @@ export async function getStaticProps({
     ['title', 'date', 'slug', 'content', 'thumbnail'],
     formattedLocale
   )
-  const content = await markdownToHtml(post.content || '')
+  // const content = await markdownToHtml(post.content || '')
 
-  return { props: { post: { ...post, content } } }
+  return { props: { post, markdown: post.content } }
 }
 
 type GetStaticPaths = {
