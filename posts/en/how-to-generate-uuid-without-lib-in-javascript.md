@@ -6,6 +6,12 @@ slug: 'how-to-generate-uuid-without-lib-in-javascript'
 excerpt: 'Generate UUID Without Lib in JavaScript using Web Crypto API from native browser APi'
 ---
 
-## Game On
+## Web Crypto API
 
-Web Crypto API
+If your website is hosted in a web security envirment (**https**), you could use the Web Crypto API to generate random uuid in a very simple way:
+
+```jsx
+const uuid = crypto.randomUUID()
+
+console.log(uuid) // 'f38aa0c4-3458-41cc-9256-0145ee39d069'
+```
