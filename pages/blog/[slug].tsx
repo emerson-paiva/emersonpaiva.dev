@@ -63,7 +63,7 @@ const BlogPost = ({
       <S.PostView>
         {/* TODO add timeToRead style */}
         {/* {getTimeToRead(timeToRead)} */}
-        <S.PostExcerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
+        {/* <S.PostExcerpt dangerouslySetInnerHTML={{ __html: excerpt }} /> */}
         {/* <S.PostContent dangerouslySetInnerHTML={{ __html: content }} /> */}
         <S.PostContent>
           <ReactMarkdown
