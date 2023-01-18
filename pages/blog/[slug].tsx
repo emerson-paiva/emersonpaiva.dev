@@ -104,7 +104,7 @@ export async function getStaticProps({
 
   const post = getPostBySlug(
     params.slug,
-    ['title', 'date', 'slug', 'content', 'thumbnail'],
+    ['title', 'date', 'slug', 'content', 'thumbnail', 'excerpt'],
     formattedLocale
   )
   // const content = await markdownToHtml(post.content || '')
