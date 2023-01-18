@@ -43,10 +43,6 @@ class CustomDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
             rel="stylesheet"
           />
-          <meta
-            name="description"
-            content="Emerson Paiva, front end developer. Here I will share some of the knowledge acquired in my journey as a Front End developer"
-          />
         </Head>
         <body>
           <Main />
