@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import media from 'styled-media-query'
 import { LightBulb } from '@styled-icons/heroicons-solid/LightBulb'
 import Link from 'next/link'
@@ -57,14 +57,19 @@ export const Navbar = styled.nav`
   display: flex;
   align-items: center;
   border-right: 1px solid rgba(0, 0, 0, 0.2);
-  padding-right: 1.75rem;
 
   &:not(:last-child) {
     margin-right: 1.25rem;
   }
 `
 
-export const NavItem = styled.a`
+const navItemModifier = {
+  active: () => css`
+    color: var(--color-primary);
+  `,
+}
+
+export const NavItem = styled.a<{ active?: boolean }>`
   color: var(--color-text);
   font-size: 1.7rem;
   font-weight: 600;
@@ -72,8 +77,6 @@ export const NavItem = styled.a`
   position: relative;
 
   &:not(:last-child) {
-    color: var(--color-primary);
-
     &::after {
       content: '•';
       color: var(--color-text);
@@ -81,6 +84,8 @@ export const NavItem = styled.a`
       margin: 0px 1rem;
     }
   }
+
+  ${({ active = false }) => active && navItemModifier.active()}
 `
 
 export const ButtonChangeTheme = styled.button`

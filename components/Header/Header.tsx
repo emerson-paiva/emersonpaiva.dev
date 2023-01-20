@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/router'
 // import switchOn from '../../assets/audio/switch-on.mp3'
 // import switchOff from '../../assets/audio/switch-off.mp3'
 import Link from 'next/link'
@@ -19,6 +20,8 @@ export const Header = () => {
   const [theme, setTheme] = useState<'light' | 'dark'>()
   const [onSwitchOn, setOnSwitchOn] = useState()
   const [onSwitchOff, setOnSwitchOff] = useState()
+  const { pathname } = useRouter()
+  console.log({ pathname })
 
   const toggleTheme = () => {
     if (theme === 'dark') {
@@ -56,10 +59,10 @@ export const Header = () => {
           <S.Navbar>
             {/* TODO add who I'm page */}
             <Link href={'/'} passHref>
-              <S.NavItem>hi</S.NavItem>
+              <S.NavItem active={pathname === '/'}>hi</S.NavItem>
             </Link>
             <Link href="/blog" passHref>
-              <S.NavItem>blog</S.NavItem>
+              <S.NavItem active={pathname.includes('blog')}>blog</S.NavItem>
             </Link>
           </S.Navbar>
           {/* <S.ButtonChangeTheme onClick={toggleTheme}>
