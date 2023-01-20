@@ -53,7 +53,7 @@ export const PostView = styled.div`
   height: 100%;
   max-width: 86rem;
   margin: 0 auto;
-  padding: 3rem 7rem 5rem;
+  padding: 3rem 5rem 5rem;
   position: relative;
   width: 100%;
 
@@ -147,7 +147,7 @@ export const PostContent = styled.article`
   iframe,
   .button-post {
     color: var(--color-text);
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.069rem;

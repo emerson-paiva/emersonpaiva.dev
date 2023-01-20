@@ -1,6 +1,11 @@
 import * as S from './styled'
 
-export const getTimeToRead = (time: number) => `${time} min de leitura`
+export const getFormattedDate = (date: string) =>
+  new Date(date).toLocaleDateString('en-US', {
+    dateStyle: 'medium',
+  })
+
+export const getTimeToRead = (time: number) => `${time} min of reading`
 
 const RenderCover = (cover: string, alt: string) => (
   <S.CoverWrapper>
@@ -31,15 +36,15 @@ export const PostItem = ({ post }: PostItemProps) => {
         <a> */}
       {thumbnail && RenderCover(thumbnail, title)}
       <S.PostDetails>
-        <S.PostNotes>
-          <S.PostLabel>{date}</S.PostLabel>
-          <S.PostLabel>{getTimeToRead(timeToRead)}</S.PostLabel>
-        </S.PostNotes>
         <S.PostLink href={`/blog/${slug}`}>
           <a>
             <S.Title>{title}</S.Title>
           </a>
         </S.PostLink>
+        <S.PostNotes>
+          <S.PostLabel>{getFormattedDate(date)}</S.PostLabel>
+          <S.PostLabel>{getTimeToRead(timeToRead)}</S.PostLabel>
+        </S.PostNotes>
         <S.PostTags>
           {tags?.map((tag) => (
             <S.PostLabel key={tag}>#{tag}</S.PostLabel>
