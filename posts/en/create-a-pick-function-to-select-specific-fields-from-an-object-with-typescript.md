@@ -18,7 +18,6 @@ const pick = <Target, KeysToPick extends keyof Target>(
   targetObj: Target,
   keys: KeysToPick[]
 ) => keys.reduce((acc, key) => ({ ...acc, [key]: targetObj[key] }), {})
-
 ```
 
 This function allows you to select and extract specific fields from an object, making your code more efficient and easier to manage.
