@@ -13,7 +13,7 @@ In JavaScript and TypeScript, working with objects is a common task. Sometimes, 
 
 The pick function defined as follows:
 
-```typescript
+```js
 const pick = <Target, KeysToPick extends keyof Target>(
   targetObj: Target,
   keys: KeysToPick[]
@@ -31,7 +31,7 @@ The pick function takes two arguments:
 The function uses the `reduce` method to iterate through the `keys` array and build a new object (`acc`) containing only the selected fields from the source object `targetObj`. It does this by creating a new property for each selected key and copying the corresponding value from `targetObj` to the new object.
 
 ## Example usage:
-```typescript
+```js
 const user = {
   id: 1,
   name: "John Doe",
