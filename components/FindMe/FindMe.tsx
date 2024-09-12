@@ -34,10 +34,10 @@ export const FindMe = ({ github, linkedin, twitter }: FindMeProps) => (
       Icon={Linkedin}
       title="LinkedIn"
     />
-    <SocialMediaLink
+    {/* <SocialMediaLink
       url={`https://twitter.com/${twitter}`}
       Icon={Twitter}
       title="Twitter"
-    />
+    /> */}
   </S.FindMeWrapper>
 )
