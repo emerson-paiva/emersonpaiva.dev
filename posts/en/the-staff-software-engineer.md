@@ -33,6 +33,7 @@ Create slots into your calendar to focus and some smaller slots to be creative, 
 Don't be complacent about your app's lack of testing, logging, and observability. Not confident about your app? Do you think that your deployments are unpredictable and it easily breaks production with merges? Improve it, and be bold to argue the need of this and others improvements when it's required.
 
 Ensuring high-quality deliverables, through an internal testing and reviews of the Pull Request, use the space to share and learn with your peers. Always ask for tests or to improve certain parts of the code, but don't block production deploys because of this, create an issue and align the priority with your Product Manager.
+
 We always have space to improve the project we are working on. Experiment new tools and frameworks within internal projects. Evaluate emerging technologies that could be relevant to company goals.
 
 ## Leveling up engineers
