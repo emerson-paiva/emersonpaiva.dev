@@ -19,6 +19,7 @@ The Calendar and Slack's status are your best friends, every time you need to be
 ## Each interaction matters
 
 Your communication needs to be clear, direct, without bias, also treat your peers with respect and kindness, and create a supportive and blameless team environment. Don't be a jerk.
+
 We don't have all the time in the world, so use your time and that of others responsibly. If you are facing a block, unless it is a critical bug in production, first try to resolve it async and if it continues to be blocked, schedule a call. Phrases like "Let's hop on a quick call to discuss" do not apply to you. Respect other people's focus time.
 
 ## Focus
