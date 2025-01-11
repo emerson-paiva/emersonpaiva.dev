@@ -1,14 +1,14 @@
 ---
-title: '(My) Staff Software Engineer Profile'
+title: '(My) Software Engineer Profile'
 date: '2025-01-011'
-tags: ['softskills', 'staff']
-slug: 'the-staff-software-engineer'
-excerpt: 'A personal reflection on the Staff Software Engineer role, focusing on public collaboration, effective communication, maintaining focus, project improvement, and engineering leadership.'
+tags: ['softskills']
+slug: 'the-software-engineer'
+excerpt: 'A personal reflection on the Software Engineer role, focusing on public collaboration, effective communication, maintaining focus, project improvement, and engineering leadership.'
 ---
 
-# The Staff Software Engineer
+# The Software Engineer
 
-Below I describe how I see my Staff Software Engineer profile.
+Below I describe how I see my Software Engineer profile.
 
 ## Don't work in the shadows
 
